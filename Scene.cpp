@@ -7,31 +7,32 @@
 #include "PLYReader.h"
 #include "Application.h"
 
-
 Scene::Scene()
 {
 	meshCube = NULL;
 	meshFigurine = NULL;
 	meshWall = NULL;
 	meshBunny = NULL;
+	meshDragon = NULL;
 }
 
 Scene::~Scene()
 {
-	if(meshCube != NULL)
+	if (meshCube != NULL)
 		delete meshCube;
-	if(meshFigurine != NULL)
+	if (meshFigurine != NULL)
 		delete meshFigurine;
-	if(meshWall != NULL)
+	if (meshWall != NULL)
 		delete meshWall;
-	if(meshBase != NULL)
+	if (meshBase != NULL)
 		delete meshBase;
-	if(meshBunny != NULL) 
+	if (meshBunny != NULL)
 		delete meshBunny;
-	for(vector<TriangleMeshInstance *>::iterator it=objects.begin(); it!=objects.end(); it++)
+	if (meshDragon != NULL)
+		delete meshDragon;
+	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
 		delete *it;
 }
-
 
 // Initialize the scene. This includes the cube we will use to render
 // the floor and ceiling, as well as the camera.
@@ -42,7 +43,7 @@ void Scene::init()
 	meshCube->buildCube();
 	meshCube->sendToOpenGL();
 	currentTime = 0.0f;
-	
+
 	camera.init(glm::vec3(0.f, 1.0f, 2.f));
 }
 
@@ -50,36 +51,53 @@ void Scene::init()
 
 bool Scene::loadMap(const string &filename)
 {
-    ifstream fin;
-    string model_filename;
-    
-    fin.open(filename);
-    if(!fin.is_open())
-        return false;
-        
-    // 1. Prima riga del file: Armadillo
-    fin >> model_filename;
-    if((meshFigurine = loadMesh(model_filename)) == NULL)
-        return false;
-        
-    // 2. Seconda riga del file: Bunny (SPOSTATO QUI!)
-    fin >> model_filename;
-    if((meshBunny = loadMesh(model_filename)) == NULL)
-        return false;
-        
-    // 3. Terza riga: Muro
-    fin >> model_filename;
-    if((meshWall = loadMesh(model_filename)) == NULL)
-        return false;
-        
-    // 4. Quarta riga: Base
-    fin >> model_filename;
-    if((meshBase = loadMesh(model_filename)) == NULL)
-        return false;
-        
-    buildRoom();
-    
-    return true;
+	ifstream fin;
+	string model_filename;
+
+	fin.open(filename);
+	if (!fin.is_open()) {
+        cout << "ERRORE CRITICO: Impossibile trovare il file della mappa: " << filename << endl;
+		return false;
+    }
+
+	// 1. Armadillo
+	fin >> model_filename;
+	if ((meshFigurine = loadMesh(model_filename)) == NULL) {
+        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+		return false;
+    }
+
+	// 2. Muro
+	fin >> model_filename;
+	if ((meshWall = loadMesh(model_filename)) == NULL) {
+        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+		return false;
+    }
+
+	// 3. Base
+	fin >> model_filename;
+	if ((meshBase = loadMesh(model_filename)) == NULL) {
+        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+		return false;
+    }
+
+    // 4. Bunny
+	fin >> model_filename;
+	if ((meshBunny = loadMesh(model_filename)) == NULL) {
+        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+		return false;
+    }
+
+    // 5. Dragon
+	fin >> model_filename;
+	if ((meshDragon = loadMesh(model_filename)) == NULL) {
+        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+		return false;
+    }
+
+	buildRoom();
+
+	return true;
 }
 
 // Loads the mesh into CPU memory and sends it to GPU memory (using GL)
@@ -87,21 +105,21 @@ bool Scene::loadMap(const string &filename)
 TriangleMesh *Scene::loadMesh(const string &filename) const
 {
 	TriangleMesh *mesh;
-#pragma warning( push )
-#pragma warning( disable : 4101)
+#pragma warning(push)
+#pragma warning(disable : 4101)
 	PLYReader reader;
-#pragma warning( pop ) 
+#pragma warning(pop)
 
 	mesh = new TriangleMesh();
 	bool bSuccess = reader.readMesh(filename, *mesh);
-	if(bSuccess)
+	if (bSuccess)
 		mesh->sendToOpenGL();
 	else
 	{
 		delete mesh;
 		mesh = NULL;
 	}
-	
+
 	return mesh;
 }
 
@@ -116,7 +134,7 @@ void Scene::render()
 {
 	Application::instance().getShader()->use();
 	camera.render();
-	for(vector<TriangleMeshInstance *>::iterator it=objects.begin(); it!=objects.end(); it++)
+	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
 		(*it)->render();
 }
 
@@ -130,79 +148,119 @@ VectorCamera &Scene::getCamera()
 
 void Scene::buildRoom()
 {
-    glm::mat4 transform;
-    TriangleMeshInstance *instance;
+	glm::mat4 transform;
+	TriangleMeshInstance *instance;
 
-    // 1. Apriamo il file del livello appena creato
-    ifstream fin("../level.txt");
-    if(!fin.is_open()) {
-        cout << "ERRORE: Impossibile trovare level.txt" << endl;
-        return; // Interrompe se non trova il file
-    }
+	// 1. Apriamo il file del livello appena creato
+	ifstream fin("../level.txt");
+	if (!fin.is_open())
+	{
+		cout << "ERRORE: Impossibile trovare level.txt" << endl;
+		return; // Interrompe se non trova il file
+	}
 
-    string line;
-    int z = 0;             // Indice della riga (Asse Z nel 3D)
-    float tileSize = 2.0f; // La grandezza fisica di ogni cella
+	string line;
+	int z = 0;			   // Indice della riga (Asse Z nel 3D)
+	float tileSize = 2.0f; // La grandezza fisica di ogni cella
 
-    // 2. Leggiamo il file riga per riga
-    while(fin >> line) {
-        
-        // 3. Scansioniamo ogni singolo carattere della riga
-        for(int x = 0; x < line.length(); x++) { // Indice della colonna (Asse X)
-            char tileType = line[x];
+	// 2. Leggiamo il file riga per riga
+	while (fin >> line)
+	{
 
-            // Calcoliamo la coordinata matematica reale.
-            // Sottraiamo 10.0f per far "centrare" la stanza attorno alla telecamera
-            float realX = (x * tileSize) - 10.0f; 
-            float realZ = (z * tileSize) - 10.0f;
+		// 3. Scansioniamo ogni singolo carattere della riga
+		for (int x = 0; x < line.length(); x++)
+		{ // Indice della colonna (Asse X)
+			char tileType = line[x];
 
-            // CASO A: Pavimento (Lo creiamo sempre, per qualsiasi blocco valido)
-            if(tileType == '0' || tileType == '1' || tileType == '2') {
-                transform = glm::mat4(1.0f);
-                transform = glm::translate(transform, glm::vec3(realX, -0.05f, realZ));
-                // Scaliamo un cubo in modo che sia largo "tileSize" ma piatto (0.1f)
-                transform = glm::scale(transform, glm::vec3(tileSize, 0.1f, tileSize));
-                instance = new TriangleMeshInstance();
-                instance->init(meshCube, glm::vec4(0.137f, 0.094f, 0.074f, 1.0f), transform, 0.1f, 0.85f);
-                objects.push_back(instance);
-            }
+			// Calcoliamo la coordinata matematica reale.
+			// Sottraiamo 10.0f per far "centrare" la stanza attorno alla telecamera
+			float realX = (x * tileSize) - 10.0f;
+			float realZ = (z * tileSize) - 10.0f;
 
-            // CASO B: Muro
-            if(tileType == '1') {
-                transform = glm::mat4(1.0f);
-                // Alziamo il muro di 1.0 sull'asse Y per poggiarlo sopra al pavimento
-                transform = glm::translate(transform, glm::vec3(realX, 1.0f, realZ));
-                // Le slide di lab1.pdf dicono: "Empty cells & walls = Scaled cubes"
-                transform = glm::scale(transform, glm::vec3(tileSize, 2.0f, tileSize));
-                instance = new TriangleMeshInstance();
-                // Grigio chiaro per i muri
-                instance->init(meshCube, glm::vec4(0.6f, 0.6f, 0.6f, 1.0f), transform, 0.1f, 0.85f);
-                objects.push_back(instance);
-            }
+			// CASO A: Pavimento (Lo creiamo sempre, per qualsiasi blocco valido)
+			if (tileType == '0' || tileType == '1' || tileType == '2' || tileType == '3' || tileType == '4')
+			{
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, -0.05f, realZ));
+				// Scaliamo un cubo in modo che sia largo "tileSize" ma piatto (0.1f)
+				transform = glm::scale(transform, glm::vec3(tileSize, 0.1f, tileSize));
+				instance = new TriangleMeshInstance();
+				instance->init(meshCube, glm::vec4(0.137f, 0.094f, 0.074f, 1.0f), transform, 0.1f, 0.85f);
+				objects.push_back(instance);
+			}
 
-            // CASO C: Piedistallo + Armadillo (il nostro nuovo codice '2')
-            if(tileType == '2') {
-                // Piedistallo
-                transform = glm::mat4(1.0f);
-                transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
-                transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
-                instance = new TriangleMeshInstance();
-                instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-                objects.push_back(instance);
+			// CASO B: Muro
+			if (tileType == '1')
+			{
+				transform = glm::mat4(1.0f);
+				// Alziamo il muro di 1.0 sull'asse Y per poggiarlo sopra al pavimento
+				transform = glm::translate(transform, glm::vec3(realX, 1.0f, realZ));
+				// Le slide di lab1.pdf dicono: "Empty cells & walls = Scaled cubes"
+				transform = glm::scale(transform, glm::vec3(tileSize, 2.0f, tileSize));
+				instance = new TriangleMeshInstance();
+				// Grigio chiaro per i muri
+				instance->init(meshCube, glm::vec4(0.6f, 0.6f, 0.6f, 1.0f), transform, 0.1f, 0.85f);
+				objects.push_back(instance);
+			}
 
-                // Armadillo (meshFigurine)
-                transform = glm::mat4(1.0f);
-                transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
-                transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
-                instance = new TriangleMeshInstance();
-                instance->init(meshFigurine, glm::vec4(1.0f), transform, 0.15f, 0.4f);
-                objects.push_back(instance);
-            }
-        }
-        z++; // Finito di leggere la riga, incrementiamo l'asse Z
-    }
+			// CASO C: Piedistallo + Armadillo (il nostro nuovo codice '2')
+			if (tileType == '2')
+			{
+				// Piedistallo
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
+				objects.push_back(instance);
+
+				// Armadillo (meshFigurine)
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshFigurine, glm::vec4(1.0f), transform, 0.15f, 0.4f);
+				objects.push_back(instance);
+			}
+
+			if (tileType == '3')
+			{
+				// 1. Prima creo il Piedistallo
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
+				objects.push_back(instance);
+
+				// 2. Poi creo il Bunny sopra al piedistallo (Y a 0.75)
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f)); // Se il bunny ti sembra piccolo, puoi provare 0.8f invece di 0.5f
+				instance = new TriangleMeshInstance();
+				instance->init(meshBunny, glm::vec4(1.0f), transform, 0.15f, 0.4f);
+				objects.push_back(instance);
+			}
+
+			if (tileType == '4')
+			{
+				// 1. Prima creo il Piedistallo
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
+				objects.push_back(instance);
+
+				// 2. Poi creo il Dragon sopra al piedistallo (Y a 0.75)
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshDragon, glm::vec4(1.0f), transform, 0.15f, 0.75f);
+				objects.push_back(instance);
+			}
+		}
+		z++; // Finito di leggere la riga, incrementiamo l'asse Z
+	}
 }
-
-
-
-

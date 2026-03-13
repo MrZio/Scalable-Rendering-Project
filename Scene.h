@@ -38,7 +38,7 @@ private:
 
 private:
 	VectorCamera camera;
-	TriangleMesh *meshCube, *meshFigurine, *meshWall, *meshBase, *meshBunny;
+	TriangleMesh *meshCube, *meshFigurine, *meshWall, *meshBase, *meshBunny, *meshDragon;
 	vector<TriangleMeshInstance *> objects;
 	float currentTime;
 

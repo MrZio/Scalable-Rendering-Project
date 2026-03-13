@@ -1,4 +1,5 @@
 models/textured/ArmadilloJade.ply
-models/textured/ArmadilloStone.ply
 models/room/Wall.ply
 models/room/Base.ply
+models/textured/bunny.ply
+models/textured/dragon.ply
