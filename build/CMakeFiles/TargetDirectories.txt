@@ -1,0 +1,3 @@
+C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/build/CMakeFiles/SRGGE.dir
+C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/build/CMakeFiles/edit_cache.dir
+C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/build/CMakeFiles/rebuild_cache.dir

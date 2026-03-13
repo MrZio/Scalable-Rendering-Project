@@ -1,0 +1,14 @@
+# Ignora la cartella di compilazione di CMake
+build/
+
+# Ignora i file temporanei di Visual Studio
+.vs/
+*.user
+
+# Ignora i modelli 3D pesanti (che non sono codice sorgente)
+*.ply
+
+# Ignora eseguibili e librerie precompilate
+*.exe
+*.dll
+*.lib
