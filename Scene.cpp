@@ -88,12 +88,26 @@ bool Scene::loadMap(const string &filename)
 		return false;
     }
 
-    // 5. Dragon
+    
+	// Semplifichiamo il Bunny (proviamo con cubetti grandi 0.02)
+    cout << "Semplificando il Bunny..." << endl;
+    meshBunny->simplify(0.02f); 
+
+	fin >> model_filename;
+	if ((meshDragon = loadMesh(model_filename)) == NULL)
+		return false;
+
+
+	// 5. Dragon
 	fin >> model_filename;
 	if ((meshDragon = loadMesh(model_filename)) == NULL) {
         cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
     }
+
+    // Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
+    cout << "Semplificando il Drago..." << endl;
+    meshDragon->simplify(0.02f); 
 
 	buildRoom();
 

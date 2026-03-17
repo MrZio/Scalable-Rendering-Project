@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <map>
 #include "TriangleMesh.h"
 #include "Application.h"
 
@@ -138,4 +139,105 @@ void TriangleMesh::free()
 	vertices.clear();
 	colors.clear();
 	triangles.clear();
+}
+
+void TriangleMesh::simplify(float cellSize)
+{
+    cout << "Prima: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
+	std::map<GridIndex, CellInfo> grid;
+    
+    // Se la mesh non ha vertici, interrompiamo per evitare crash
+    if(vertices.empty()) return;
+
+    // Calcoliamo il minBox esplorando tutti i vertici (troviamo le X, Y e Z minime assolute)
+    glm::vec3 minBox = vertices[0];
+    for (int i = 0; i < vertices.size(); i++) {
+        if (vertices[i].x < minBox.x) minBox.x = vertices[i].x;
+        if (vertices[i].y < minBox.y) minBox.y = vertices[i].y;
+        if (vertices[i].z < minBox.z) minBox.z = vertices[i].z;
+    }
+
+    // ==========================================
+    // PARTE 1: RAGGRUPPAMENTO
+    // ==========================================
+    for (int v = 0; v < vertices.size(); v++)
+    {
+        glm::vec3 vertex = vertices[v];
+
+        GridIndex index;
+        index.i = floor((vertex.x - minBox.x) / cellSize);
+        index.j = floor((vertex.y - minBox.y) / cellSize);
+        index.k = floor((vertex.z - minBox.z) / cellSize);
+
+        grid[index].sum += vertex;
+        grid[index].count += 1;
+    } // <-- CRITICO: Il ciclo della Parte 1 DEVE finire qui!
+
+    // ==========================================
+    // PARTE 2: CREAZIONE NUOVI VERTICI
+    // ==========================================
+    vector<glm::vec3> newVertices;
+    // vector<glm::vec3> newColors; // Da implementare in futuro se vuoi i colori
+
+    for (auto it = grid.begin(); it != grid.end(); it++)
+    {
+        glm::vec3 verticeMedio = it->second.sum / (float)it->second.count;
+        newVertices.push_back(verticeMedio);
+        it->second.newVertexId = newVertices.size() - 1;
+    } // <-- Il ciclo della Parte 2 finisce qui!
+
+    // ==========================================
+    // PARTE 3: RICOSTRUZIONE TRIANGOLI
+    // ==========================================
+    vector<int> newTriangles;
+    
+    for (size_t t = 0; t < triangles.size(); t += 3) 
+    {
+        int v1 = triangles[t];
+        int v2 = triangles[t + 1];
+        int v3 = triangles[t + 2];
+
+        glm::vec3 pos1 = vertices[v1];
+        glm::vec3 pos2 = vertices[v2];
+        glm::vec3 pos3 = vertices[v3];
+
+        GridIndex idx1 = {
+            (int)floor((pos1.x - minBox.x) / cellSize),
+            (int)floor((pos1.y - minBox.y) / cellSize),
+            (int)floor((pos1.z - minBox.z) / cellSize)
+        };
+        GridIndex idx2 = {
+            (int)floor((pos2.x - minBox.x) / cellSize),
+            (int)floor((pos2.y - minBox.y) / cellSize),
+            (int)floor((pos2.z - minBox.z) / cellSize)
+        };
+        GridIndex idx3 = {
+            (int)floor((pos3.x - minBox.x) / cellSize),
+            (int)floor((pos3.y - minBox.y) / cellSize),
+            (int)floor((pos3.z - minBox.z) / cellSize)
+        };
+
+        int newV1 = grid[idx1].newVertexId;
+        int newV2 = grid[idx2].newVertexId;
+        int newV3 = grid[idx3].newVertexId;
+    
+        if(newV1 != newV2 && newV2 != newV3 && newV1 != newV3) 
+        {
+            newTriangles.push_back(newV1);
+            newTriangles.push_back(newV2);
+            newTriangles.push_back(newV3);
+        }
+    } // <-- Il ciclo della Parte 3 finisce qui!
+
+    // ==========================================
+    // SALVATAGGIO FINALE
+    // ==========================================
+    // Sostituiamo i vecchi array giganti con quelli nuovi, piccoli e semplificati!
+    vertices = newVertices;
+    triangles = newTriangles;
+
+	cout << "Dopo: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
+    
+    // IMPORTANTE: Dobbiamo dire a OpenGL di ricaricare il modello nella scheda video!
+    sendToOpenGL(); 
 }

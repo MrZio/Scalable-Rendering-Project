@@ -220,6 +220,14 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj: \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h \
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc \
+ C:/msys64/mingw64/include/c++/15.2.0/map \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h \
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h \
+ C:/msys64/mingw64/include/c++/15.2.0/utility \
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h \
  C:\Users\Alessandro\Desktop\SRGGE\SRGGE_Base\TriangleMesh.h \
  C:/msys64/mingw64/include/c++/15.2.0/string \
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h \

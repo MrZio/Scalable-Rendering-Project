@@ -4,6 +4,8 @@
 
 #include <glm/glm.hpp>
 #include <vector>
+#include <map>
+#include <utility>
 #include "VectorCamera.h"
 #include "TriangleMesh.h"
 #include "TriangleMeshInstance.h"
@@ -28,6 +30,7 @@ public:
 	TriangleMesh *loadMesh(const string &filename) const;
 	void update(int deltaTime);
 	void render();
+	std::map<std::pair<int, int>, char> grid; // Mappa che associa a ogni cella (x, z) il suo tipo di blocco (0, 1, 2, 3 o 4)
 
 	VectorCamera &getCamera();
 

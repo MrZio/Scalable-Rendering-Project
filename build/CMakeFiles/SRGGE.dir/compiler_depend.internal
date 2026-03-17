@@ -34,6 +34,7 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
@@ -70,7 +71,11 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
@@ -96,6 +101,7 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/15.2.0/exception
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
@@ -108,6 +114,7 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/iostream
  C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
@@ -118,6 +125,7 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
@@ -1055,6 +1063,7 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
@@ -1092,7 +1101,11 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
@@ -1118,6 +1131,7 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/15.2.0/exception
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
@@ -1131,6 +1145,7 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/iostream
  C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
@@ -1141,6 +1156,7 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/basic_file.h
@@ -2482,6 +2498,7 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
@@ -2518,7 +2535,11 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
@@ -2544,6 +2565,7 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/15.2.0/exception
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
@@ -2556,6 +2578,7 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/iostream
  C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
@@ -2566,6 +2589,7 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
@@ -2987,6 +3011,7 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h
@@ -3013,7 +3038,11 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
@@ -3035,6 +3064,7 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h
@@ -3043,12 +3073,14 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/initializer_list
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/string
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -3462,6 +3494,7 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h
@@ -3488,7 +3521,11 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
@@ -3510,6 +3547,7 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h
@@ -3518,12 +3556,14 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/initializer_list
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/string
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
@@ -4170,6 +4210,7 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
@@ -4206,7 +4247,11 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
@@ -4232,6 +4277,7 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/15.2.0/exception
+ C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
@@ -4244,6 +4290,7 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/iostream
  C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
+ C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
@@ -4254,6 +4301,7 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
