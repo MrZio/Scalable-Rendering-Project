@@ -29,7 +29,7 @@ public:
 
 	void initVertices(const vector<float> &newVertices, const vector<float> &newColors);
 	void initTriangles(const vector<int> &newTriangles);
-	void simplify(float cellSize);
+	void simplify(int resolution);
 
 	void buildCube();
 	
@@ -71,10 +71,14 @@ private:
 	vector<glm::vec3> vertices;
 	vector<glm::vec3> colors;
 	vector<int> triangles;
+	vector<glm::vec3> originalVertices;
+    vector<int> originalTriangles;
 	
 	GLuint vao;
 	GLuint vbo;
 	GLint posLocation, normalLocation, colorLocation;
+
+	
 	
 };
 

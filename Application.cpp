@@ -92,6 +92,12 @@ void Application::keyPressed(int key)
 		bPlay = false;
 		break;
 	case GLFW_KEY_RIGHT:
+	case GLFW_KEY_KP_ADD:
+    	scene.changeLevelDetail(20);
+    	break;
+	case GLFW_KEY_KP_SUBTRACT:		
+		scene.changeLevelDetail(-20);
+    	break;
 	case GLFW_KEY_LEFT:
 	case GLFW_KEY_DOWN:
 	case GLFW_KEY_UP:

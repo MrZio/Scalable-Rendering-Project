@@ -7,6 +7,8 @@
 #include "PLYReader.h"
 #include "Application.h"
 
+int gridResolution = 100; 
+
 Scene::Scene()
 {
 	meshCube = NULL;
@@ -89,9 +91,9 @@ bool Scene::loadMap(const string &filename)
     }
 
     
-	// Semplifichiamo il Bunny (proviamo con cubetti grandi 0.02)
+	// Semplifichiamo il Bunny 
     cout << "Semplificando il Bunny..." << endl;
-    meshBunny->simplify(0.02f); 
+    meshBunny->simplify(gridResolution); 
 
 	fin >> model_filename;
 	if ((meshDragon = loadMesh(model_filename)) == NULL)
@@ -107,7 +109,7 @@ bool Scene::loadMap(const string &filename)
 
     // Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
     cout << "Semplificando il Drago..." << endl;
-    meshDragon->simplify(0.02f); 
+    meshDragon->simplify(0.05f); 
 
 	buildRoom();
 
@@ -157,6 +159,22 @@ VectorCamera &Scene::getCamera()
 	return camera;
 }
 
+int Scene::getGridResolution() {
+	return gridResolution;
+}
+
+void Scene::setGridResolution(int newResolution) {
+	gridResolution = newResolution;
+}
+
+void Scene::changeLevelDetail(int delta) {
+    gridResolution += delta;
+    if(gridResolution < 1) gridResolution = 1;
+
+    cout << "Semplificando..." << endl;
+    if(meshBunny != NULL) meshBunny->simplify(gridResolution);
+    if(meshDragon != NULL) meshDragon->simplify(gridResolution);
+}
 // Init & render the room. Both the floor and the walls are instances of the
 // same initial cube scaled and translated to build the room.
 

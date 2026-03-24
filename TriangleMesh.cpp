@@ -43,11 +43,13 @@ void TriangleMesh::initVertices(const vector<float> &newVertices, const vector<f
 		if(newColors.size() >= 3 * (i + 1))
 			colors[i] = glm::vec3(newColors[3*i], newColors[3*i+1], newColors[3*i+2]);
 	}
+    originalVertices = vertices;
 }
 
 void TriangleMesh::initTriangles(const vector<int> &newTriangles)
 {
 	triangles = newTriangles;
+    originalTriangles = triangles;
 }
 
 void TriangleMesh::buildCube()
@@ -141,28 +143,38 @@ void TriangleMesh::free()
 	triangles.clear();
 }
 
-void TriangleMesh::simplify(float cellSize)
+void TriangleMesh::simplify(int resolution)
 {
-    cout << "Prima: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
-	std::map<GridIndex, CellInfo> grid;
-    
-    // Se la mesh non ha vertici, interrompiamo per evitare crash
-    if(vertices.empty()) return;
+    // Sicurezza: se non c'è il backup, fermiamo tutto!
+    if (originalVertices.empty()) return;
 
-    // Calcoliamo il minBox esplorando tutti i vertici (troviamo le X, Y e Z minime assolute)
-    glm::vec3 minBox = vertices[0];
-    for (int i = 0; i < vertices.size(); i++) {
-        if (vertices[i].x < minBox.x) minBox.x = vertices[i].x;
-        if (vertices[i].y < minBox.y) minBox.y = vertices[i].y;
-        if (vertices[i].z < minBox.z) minBox.z = vertices[i].z;
+    // 1. CALCOLO DEL BOUNDING BOX (Scansionando il BACKUP)
+    glm::vec3 minBox = originalVertices[0];
+    glm::vec3 maxBox = originalVertices[0];
+    
+    for (int i = 0; i < originalVertices.size(); i++) {
+        minBox.x = min(minBox.x, originalVertices[i].x);
+        minBox.y = min(minBox.y, originalVertices[i].y);
+        minBox.z = min(minBox.z, originalVertices[i].z);
+        
+        maxBox.x = max(maxBox.x, originalVertices[i].x);
+        maxBox.y = max(maxBox.y, originalVertices[i].y);
+        maxBox.z = max(maxBox.z, originalVertices[i].z);
     }
 
+    // 2. CALCOLO DELLA CELL SIZE
+    float maxAxis = max(maxBox.x - minBox.x, max(maxBox.y - minBox.y, maxBox.z - minBox.z));
+    float cellSize = maxAxis / (float)resolution;
+
+    // CREIAMO UNA MAPPA PULITA PER QUESTO CICLO
+    std::map<GridIndex, CellInfo> grid; 
+
     // ==========================================
-    // PARTE 1: RAGGRUPPAMENTO
+    // PARTE 1: RAGGRUPPAMENTO (Leggendo dal BACKUP)
     // ==========================================
-    for (int v = 0; v < vertices.size(); v++)
+    for (int v = 0; v < originalVertices.size(); v++) 
     {
-        glm::vec3 vertex = vertices[v];
+        glm::vec3 vertex = originalVertices[v]; // <-- Modificato
 
         GridIndex index;
         index.i = floor((vertex.x - minBox.x) / cellSize);
@@ -171,35 +183,34 @@ void TriangleMesh::simplify(float cellSize)
 
         grid[index].sum += vertex;
         grid[index].count += 1;
-    } // <-- CRITICO: Il ciclo della Parte 1 DEVE finire qui!
+    } 
 
     // ==========================================
     // PARTE 2: CREAZIONE NUOVI VERTICI
     // ==========================================
     vector<glm::vec3> newVertices;
-    // vector<glm::vec3> newColors; // Da implementare in futuro se vuoi i colori
 
     for (auto it = grid.begin(); it != grid.end(); it++)
     {
         glm::vec3 verticeMedio = it->second.sum / (float)it->second.count;
         newVertices.push_back(verticeMedio);
         it->second.newVertexId = newVertices.size() - 1;
-    } // <-- Il ciclo della Parte 2 finisce qui!
+    }
 
     // ==========================================
-    // PARTE 3: RICOSTRUZIONE TRIANGOLI
+    // PARTE 3: RICOSTRUZIONE TRIANGOLI (Leggendo dal BACKUP)
     // ==========================================
     vector<int> newTriangles;
     
-    for (size_t t = 0; t < triangles.size(); t += 3) 
+    for (size_t t = 0; t < originalTriangles.size(); t += 3) // <-- Modificato
     {
-        int v1 = triangles[t];
-        int v2 = triangles[t + 1];
-        int v3 = triangles[t + 2];
+        int v1 = originalTriangles[t];       // <-- Modificato
+        int v2 = originalTriangles[t + 1];   // <-- Modificato
+        int v3 = originalTriangles[t + 2];   // <-- Modificato
 
-        glm::vec3 pos1 = vertices[v1];
-        glm::vec3 pos2 = vertices[v2];
-        glm::vec3 pos3 = vertices[v3];
+        glm::vec3 pos1 = originalVertices[v1]; // <-- Modificato
+        glm::vec3 pos2 = originalVertices[v2]; // <-- Modificato
+        glm::vec3 pos3 = originalVertices[v3]; // <-- Modificato
 
         GridIndex idx1 = {
             (int)floor((pos1.x - minBox.x) / cellSize),
@@ -227,17 +238,15 @@ void TriangleMesh::simplify(float cellSize)
             newTriangles.push_back(newV2);
             newTriangles.push_back(newV3);
         }
-    } // <-- Il ciclo della Parte 3 finisce qui!
+    }
 
     // ==========================================
     // SALVATAGGIO FINALE
     // ==========================================
-    // Sostituiamo i vecchi array giganti con quelli nuovi, piccoli e semplificati!
     vertices = newVertices;
     triangles = newTriangles;
 
-	cout << "Dopo: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
+    cout << "Risoluzione " << resolution << " -> Dopo: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
     
-    // IMPORTANTE: Dobbiamo dire a OpenGL di ricaricare il modello nella scheda video!
     sendToOpenGL(); 
 }

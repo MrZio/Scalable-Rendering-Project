@@ -30,6 +30,9 @@ public:
 	TriangleMesh *loadMesh(const string &filename) const;
 	void update(int deltaTime);
 	void render();
+	void changeLevelDetail(int delta);
+    int getGridResolution();
+    void setGridResolution(int newResolution);
 	std::map<std::pair<int, int>, char> grid; // Mappa che associa a ogni cella (x, z) il suo tipo di blocco (0, 1, 2, 3 o 4)
 
 	VectorCamera &getCamera();
