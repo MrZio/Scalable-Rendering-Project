@@ -109,7 +109,7 @@ bool Scene::loadMap(const string &filename)
 
     // Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
     cout << "Semplificando il Drago..." << endl;
-    meshDragon->simplify(0.05f); 
+    meshDragon->simplify(100); 
 
 	buildRoom();
 

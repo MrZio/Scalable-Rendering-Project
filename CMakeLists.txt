@@ -23,10 +23,13 @@ find_package(OpenGL REQUIRED)
 find_package(glfw3 3.3 REQUIRED)
 find_package(GLM REQUIRED)
 
+
+
 include_directories(${OPENGL_INCLUDE_DIRS})
 include_directories(${GLFW3_INCLUDE_DIRS})
 include_directories(${GLM_INCLUDE_DIRS})
 include_directories("${CMAKE_SOURCE_DIR}/gl3w")
+include_directories(libs/eigen)
 
 link_directories(${OPENGL_LIBRARY_DIRS})
 link_directories(${GLFW3_LIBRARY_DIRS})

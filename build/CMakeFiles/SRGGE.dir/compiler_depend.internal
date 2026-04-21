@@ -5,6 +5,189 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/Application.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -21,9 +204,15 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
@@ -62,12 +251,15 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -75,12 +267,14 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -92,10 +286,13 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
@@ -117,6 +314,7 @@ CMakeFiles/SRGGE.dir/Application.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/streambuf
@@ -522,6 +720,189 @@ CMakeFiles/SRGGE.dir/PLYReader.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/PLYReader.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
  C:/msys64/mingw64/include/_mingw.h
@@ -537,9 +918,15 @@ CMakeFiles/SRGGE.dir/PLYReader.cpp.obj
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
@@ -579,21 +966,26 @@ CMakeFiles/SRGGE.dir/PLYReader.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -605,6 +997,8 @@ CMakeFiles/SRGGE.dir/PLYReader.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
@@ -630,6 +1024,7 @@ CMakeFiles/SRGGE.dir/PLYReader.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/limits
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/streambuf
@@ -1033,6 +1428,189 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/Scene.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -1049,9 +1627,15 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
@@ -1092,12 +1676,15 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -1105,12 +1692,14 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -1122,10 +1711,13 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
@@ -1148,6 +1740,7 @@ CMakeFiles/SRGGE.dir/Scene.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/streambuf
@@ -2469,6 +3062,189 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/TriangleMesh.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -2485,9 +3261,15 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
@@ -2526,12 +3308,15 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -2539,12 +3324,14 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -2556,10 +3343,13 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
@@ -2581,6 +3371,7 @@ CMakeFiles/SRGGE.dir/TriangleMesh.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/streambuf
@@ -2986,6 +3777,189 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/TriangleMeshInstance.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -2996,14 +3970,23 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/_mingw_stat64.h
  C:/msys64/mingw64/include/_mingw_stdarg.h
  C:/msys64/mingw64/include/_mingw_unicode.h
+ C:/msys64/mingw64/include/_timeval.h
  C:/msys64/mingw64/include/apiset.h
  C:/msys64/mingw64/include/apisetcconv.h
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h
@@ -3011,17 +3994,28 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h
@@ -3029,12 +4023,15 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -3042,10 +4039,14 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -3057,41 +4058,61 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
+ C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
+ C:/msys64/mingw64/include/c++/15.2.0/exception
  C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
+ C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/functional
  C:/msys64/mingw64/include/c++/15.2.0/initializer_list
+ C:/msys64/mingw64/include/c++/15.2.0/ios
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd
+ C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
+ C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
+ C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
+ C:/msys64/mingw64/include/c++/15.2.0/streambuf
  C:/msys64/mingw64/include/c++/15.2.0/string
+ C:/msys64/mingw64/include/c++/15.2.0/system_error
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
  C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/msys64/mingw64/include/concurrencysal.h
  C:/msys64/mingw64/include/consoleapi.h
  C:/msys64/mingw64/include/consoleapi2.h
  C:/msys64/mingw64/include/consoleapi3.h
  C:/msys64/mingw64/include/corecrt.h
+ C:/msys64/mingw64/include/corecrt_startup.h
  C:/msys64/mingw64/include/corecrt_stdio_config.h
  C:/msys64/mingw64/include/corecrt_wconio.h
  C:/msys64/mingw64/include/corecrt_wctype.h
@@ -3274,6 +4295,7 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/namedpipeapi.h
  C:/msys64/mingw64/include/namespaceapi.h
  C:/msys64/mingw64/include/poppack.h
+ C:/msys64/mingw64/include/process.h
  C:/msys64/mingw64/include/processenv.h
  C:/msys64/mingw64/include/processthreadsapi.h
  C:/msys64/mingw64/include/processtopologyapi.h
@@ -3283,18 +4305,26 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/pshpack2.h
  C:/msys64/mingw64/include/pshpack4.h
  C:/msys64/mingw64/include/pshpack8.h
+ C:/msys64/mingw64/include/pthread.h
+ C:/msys64/mingw64/include/pthread_compat.h
+ C:/msys64/mingw64/include/pthread_signal.h
+ C:/msys64/mingw64/include/pthread_time.h
+ C:/msys64/mingw64/include/pthread_unistd.h
  C:/msys64/mingw64/include/realtimeapiset.h
  C:/msys64/mingw64/include/reason.h
  C:/msys64/mingw64/include/sal.h
+ C:/msys64/mingw64/include/sched.h
  C:/msys64/mingw64/include/sdkddkver.h
  C:/msys64/mingw64/include/sec_api/stdio_s.h
  C:/msys64/mingw64/include/sec_api/stdlib_s.h
  C:/msys64/mingw64/include/sec_api/stralign_s.h
  C:/msys64/mingw64/include/sec_api/string_s.h
+ C:/msys64/mingw64/include/sec_api/sys/timeb_s.h
  C:/msys64/mingw64/include/sec_api/wchar_s.h
  C:/msys64/mingw64/include/sec_api/wconio_s.h
  C:/msys64/mingw64/include/securityappcontainer.h
  C:/msys64/mingw64/include/securitybaseapi.h
+ C:/msys64/mingw64/include/signal.h
  C:/msys64/mingw64/include/specstrings.h
  C:/msys64/mingw64/include/stdarg.h
  C:/msys64/mingw64/include/stddef.h
@@ -3306,16 +4336,20 @@ CMakeFiles/SRGGE.dir/TriangleMeshInstance.cpp.obj
  C:/msys64/mingw64/include/stringapiset.h
  C:/msys64/mingw64/include/swprintf.inl
  C:/msys64/mingw64/include/synchapi.h
+ C:/msys64/mingw64/include/sys/timeb.h
+ C:/msys64/mingw64/include/sys/types.h
  C:/msys64/mingw64/include/sysinfoapi.h
  C:/msys64/mingw64/include/systemtopologyapi.h
  C:/msys64/mingw64/include/threadpoolapiset.h
  C:/msys64/mingw64/include/threadpoollegacyapiset.h
+ C:/msys64/mingw64/include/time.h
  C:/msys64/mingw64/include/timezoneapi.h
  C:/msys64/mingw64/include/tvout.h
  C:/msys64/mingw64/include/utilapiset.h
  C:/msys64/mingw64/include/vadefs.h
  C:/msys64/mingw64/include/virtdisk.h
  C:/msys64/mingw64/include/wchar.h
+ C:/msys64/mingw64/include/wctype.h
  C:/msys64/mingw64/include/winapifamily.h
  C:/msys64/mingw64/include/winbase.h
  C:/msys64/mingw64/include/wincon.h
@@ -3469,6 +4503,189 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/VectorCamera.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -3479,14 +4696,23 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/_mingw_stat64.h
  C:/msys64/mingw64/include/_mingw_stdarg.h
  C:/msys64/mingw64/include/_mingw_unicode.h
+ C:/msys64/mingw64/include/_timeval.h
  C:/msys64/mingw64/include/apiset.h
  C:/msys64/mingw64/include/apisetcconv.h
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/char_traits.h
@@ -3494,17 +4720,28 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/concept_check.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_forced.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/cxxabi_init_exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/exception_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/exception_ptr.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functexcept.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/functional_hash.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/hash_bytes.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/invoke.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ios_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/istream.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_classes.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/locale_facets.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/localefwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/memoryfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/move.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/nested_exception.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/new_allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/ostream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/ostream_insert.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/postypes.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/predefined_ops.h
@@ -3512,12 +4749,15 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -3525,10 +4765,14 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
+ C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -3540,41 +4784,61 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
+ C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/15.2.0/debug/debug.h
+ C:/msys64/mingw64/include/c++/15.2.0/exception
  C:/msys64/mingw64/include/c++/15.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/alloc_traits.h
+ C:/msys64/mingw64/include/c++/15.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/numeric_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/string_conversions.h
  C:/msys64/mingw64/include/c++/15.2.0/ext/type_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/functional
  C:/msys64/mingw64/include/c++/15.2.0/initializer_list
+ C:/msys64/mingw64/include/c++/15.2.0/ios
  C:/msys64/mingw64/include/c++/15.2.0/iosfwd
+ C:/msys64/mingw64/include/c++/15.2.0/istream
  C:/msys64/mingw64/include/c++/15.2.0/limits
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
+ C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
+ C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
+ C:/msys64/mingw64/include/c++/15.2.0/streambuf
  C:/msys64/mingw64/include/c++/15.2.0/string
+ C:/msys64/mingw64/include/c++/15.2.0/system_error
  C:/msys64/mingw64/include/c++/15.2.0/tuple
  C:/msys64/mingw64/include/c++/15.2.0/type_traits
  C:/msys64/mingw64/include/c++/15.2.0/typeinfo
  C:/msys64/mingw64/include/c++/15.2.0/utility
  C:/msys64/mingw64/include/c++/15.2.0/vector
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++config.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/c++locale.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/cpu_defines.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/ctype_inline.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/error_constants.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr-default.h
+ C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/gthr.h
  C:/msys64/mingw64/include/c++/15.2.0/x86_64-w64-mingw32/bits/os_defines.h
  C:/msys64/mingw64/include/concurrencysal.h
  C:/msys64/mingw64/include/consoleapi.h
  C:/msys64/mingw64/include/consoleapi2.h
  C:/msys64/mingw64/include/consoleapi3.h
  C:/msys64/mingw64/include/corecrt.h
+ C:/msys64/mingw64/include/corecrt_startup.h
  C:/msys64/mingw64/include/corecrt_stdio_config.h
  C:/msys64/mingw64/include/corecrt_wconio.h
  C:/msys64/mingw64/include/corecrt_wctype.h
@@ -3759,6 +5023,7 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/namedpipeapi.h
  C:/msys64/mingw64/include/namespaceapi.h
  C:/msys64/mingw64/include/poppack.h
+ C:/msys64/mingw64/include/process.h
  C:/msys64/mingw64/include/processenv.h
  C:/msys64/mingw64/include/processthreadsapi.h
  C:/msys64/mingw64/include/processtopologyapi.h
@@ -3768,18 +5033,26 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/pshpack2.h
  C:/msys64/mingw64/include/pshpack4.h
  C:/msys64/mingw64/include/pshpack8.h
+ C:/msys64/mingw64/include/pthread.h
+ C:/msys64/mingw64/include/pthread_compat.h
+ C:/msys64/mingw64/include/pthread_signal.h
+ C:/msys64/mingw64/include/pthread_time.h
+ C:/msys64/mingw64/include/pthread_unistd.h
  C:/msys64/mingw64/include/realtimeapiset.h
  C:/msys64/mingw64/include/reason.h
  C:/msys64/mingw64/include/sal.h
+ C:/msys64/mingw64/include/sched.h
  C:/msys64/mingw64/include/sdkddkver.h
  C:/msys64/mingw64/include/sec_api/stdio_s.h
  C:/msys64/mingw64/include/sec_api/stdlib_s.h
  C:/msys64/mingw64/include/sec_api/stralign_s.h
  C:/msys64/mingw64/include/sec_api/string_s.h
+ C:/msys64/mingw64/include/sec_api/sys/timeb_s.h
  C:/msys64/mingw64/include/sec_api/wchar_s.h
  C:/msys64/mingw64/include/sec_api/wconio_s.h
  C:/msys64/mingw64/include/securityappcontainer.h
  C:/msys64/mingw64/include/securitybaseapi.h
+ C:/msys64/mingw64/include/signal.h
  C:/msys64/mingw64/include/specstrings.h
  C:/msys64/mingw64/include/stdarg.h
  C:/msys64/mingw64/include/stddef.h
@@ -3791,16 +5064,20 @@ CMakeFiles/SRGGE.dir/VectorCamera.cpp.obj
  C:/msys64/mingw64/include/stringapiset.h
  C:/msys64/mingw64/include/swprintf.inl
  C:/msys64/mingw64/include/synchapi.h
+ C:/msys64/mingw64/include/sys/timeb.h
+ C:/msys64/mingw64/include/sys/types.h
  C:/msys64/mingw64/include/sysinfoapi.h
  C:/msys64/mingw64/include/systemtopologyapi.h
  C:/msys64/mingw64/include/threadpoolapiset.h
  C:/msys64/mingw64/include/threadpoollegacyapiset.h
+ C:/msys64/mingw64/include/time.h
  C:/msys64/mingw64/include/timezoneapi.h
  C:/msys64/mingw64/include/tvout.h
  C:/msys64/mingw64/include/utilapiset.h
  C:/msys64/mingw64/include/vadefs.h
  C:/msys64/mingw64/include/virtdisk.h
  C:/msys64/mingw64/include/wchar.h
+ C:/msys64/mingw64/include/wctype.h
  C:/msys64/mingw64/include/winapifamily.h
  C:/msys64/mingw64/include/winbase.h
  C:/msys64/mingw64/include/wincon.h
@@ -4181,6 +5458,189 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/main.cpp
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/gl3w.h
  C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/gl3w/GL/glcorearb.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Cholesky
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Core
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Dense
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Eigenvalues
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Geometry
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Householder
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/Jacobi
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/LU
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/QR
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/SVD
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LDLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Cholesky/LLT.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArithmeticSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Array.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ArrayWrapper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Assign.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/AssignEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BandMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Block.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/BooleanRedux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CommaInitializer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ConditionEstimator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CoreIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseNullaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseTernaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/CwiseUnaryView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseCoeffsBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DenseStorage.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Diagonal.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/DiagonalProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Dot.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/EigenBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Fuzzy.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GeneralProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GenericPacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/GlobalFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IO.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/IndexedView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Inverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Map.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MapBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MathFunctionsImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Matrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/MatrixBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NestByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NoAlias.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/NumTraits.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PartialReduxEvaluator.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PermutationMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/PlainObjectBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Product.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ProductEvaluators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Random.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Redux.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Ref.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Replicate.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reshaped.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/ReturnByValue.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Reverse.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Select.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfAdjointView.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Solve.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolveTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/SolverBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StableNorm.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/StlIterators.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Stride.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Swap.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpose.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Transpositions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/TriangularMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorBlock.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/VectorwiseOp.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/Visitor.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/BFloat16.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/ConjHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Half.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/Settings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/Default/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/Complex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/PacketMath.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/AssignmentFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/BinaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/NullaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/StlFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/TernaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/functors/UnaryFunctors.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/GeneralMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/Parallelizer.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointProduct.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularMatrixVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/products/TriangularSolverVector.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/BlasUtil.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ConfigureVectorization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Constants.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/DisableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ForwardDeclarations.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IndexedViewHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/IntegralConstant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/MKL_support.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Macros.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Memory.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/Meta.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/ReshapedHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/StaticAssert.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/SymbolicIndex.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Core/util/XprHelper.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/ComplexSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/EigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/HessenbergDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealQZ.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/RealSchur.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Eigenvalues/Tridiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AlignedBox.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/AngleAxis.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/EulerAngles.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Homogeneous.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Hyperplane.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/OrthoMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/ParametrizedLine.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Quaternion.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Rotation2D.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/RotationBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Scaling.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Transform.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Translation.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/Umeyama.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Geometry/arch/Geometry_SIMD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/BlockHouseholder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/Householder.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Householder/HouseholderSequence.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/Jacobi/Jacobi.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/Determinant.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/FullPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/InverseImpl.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/PartialPivLU.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/LU/arch/InverseSize4.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/ColPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/CompleteOrthogonalDecomposition.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/FullPivHouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/QR/HouseholderQR.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/BDCSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/JacobiSVD.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/SVDBase.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/SVD/UpperBidiagonalization.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Image.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/Kernel.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/misc/RealSvd2x2.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ArrayCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/BlockMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/CommonCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/IndexedViewMethods.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseBinaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/MatrixCwiseUnaryOps.h
+ C:/Users/Alessandro/Desktop/SRGGE/SRGGE_Base/libs/eigen/Eigen/src/plugins/ReshapedMethods.h
  C:/msys64/mingw64/include/GL/gl.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
@@ -4197,9 +5657,15 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/assert.h
  C:/msys64/mingw64/include/basetsd.h
  C:/msys64/mingw64/include/bemapiset.h
+ C:/msys64/mingw64/include/c++/15.2.0/algorithm
+ C:/msys64/mingw64/include/c++/15.2.0/array
+ C:/msys64/mingw64/include/c++/15.2.0/atomic
  C:/msys64/mingw64/include/c++/15.2.0/backward/binders.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/allocator.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_base.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/atomic_lockfree_defines.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_ios.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/basic_string.h
@@ -4238,12 +5704,15 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/range_access.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/refwrap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/requires_hosted.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_abs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/std_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_algobase.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_iterator_base_types.h
@@ -4251,12 +5720,14 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_pair.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_relops.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tempbuf.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_tree.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_uninitialized.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/15.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/15.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/utility.h
  C:/msys64/mingw64/include/c++/15.2.0/bits/vector.tcc
@@ -4268,10 +5739,13 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/climits
  C:/msys64/mingw64/include/c++/15.2.0/clocale
  C:/msys64/mingw64/include/c++/15.2.0/cmath
+ C:/msys64/mingw64/include/c++/15.2.0/compare
+ C:/msys64/mingw64/include/c++/15.2.0/complex
  C:/msys64/mingw64/include/c++/15.2.0/cstddef
  C:/msys64/mingw64/include/c++/15.2.0/cstdint
  C:/msys64/mingw64/include/c++/15.2.0/cstdio
  C:/msys64/mingw64/include/c++/15.2.0/cstdlib
+ C:/msys64/mingw64/include/c++/15.2.0/cstring
  C:/msys64/mingw64/include/c++/15.2.0/cwchar
  C:/msys64/mingw64/include/c++/15.2.0/cwctype
  C:/msys64/mingw64/include/c++/15.2.0/debug/assertions.h
@@ -4293,6 +5767,7 @@ CMakeFiles/SRGGE.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/15.2.0/map
  C:/msys64/mingw64/include/c++/15.2.0/new
  C:/msys64/mingw64/include/c++/15.2.0/ostream
+ C:/msys64/mingw64/include/c++/15.2.0/sstream
  C:/msys64/mingw64/include/c++/15.2.0/stdexcept
  C:/msys64/mingw64/include/c++/15.2.0/stdlib.h
  C:/msys64/mingw64/include/c++/15.2.0/streambuf

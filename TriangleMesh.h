@@ -1,3 +1,5 @@
+#include <Eigen/Dense>
+#include <Eigen/SVD>
 #ifndef _TRIANGLE_MESH_INCLUDE
 #define _TRIANGLE_MESH_INCLUDE
 
@@ -52,20 +54,33 @@ public:
 		}
 	};
 
-	struct CellInfo
-	{
-		glm::vec3 sum;	 // Somma delle posizioni dei vertici nella cella
-		int count;		 // Numero di vertici ci sono finiti dentro
-		int newVertexId; // Id del nuovo vertice creato per questa cella
+	// struct CellInfo
+	// {
+	// 	glm::vec3 sum;	 // Somma delle posizioni dei vertici nella cella
+	// 	int count;		 // Numero di vertici ci sono finiti dentro
+	// 	int newVertexId; // Id del nuovo vertice creato per questa cella
 
-		// Costruttore: all'inizio il cestino è vuoto
-		CellInfo()
-		{
-			sum = glm::vec3(0.0f);
-			count = 0;
-			newVertexId = -1;
-		}
-	};
+	// 	// Costruttore: all'inizio il cestino è vuoto
+	// 	CellInfo()
+	// 	{
+	// 		sum = glm::vec3(0.0f);
+	// 		count = 0;
+	// 		newVertexId = -1;
+	// 	}
+	// };
+
+	struct CellInfo {
+    	Eigen::Matrix4d Q; // La matrice per la QEM
+    	int count;         // Numero di vertici (opzionale, ma utile)
+    	int newVertexId;   // L'ID del vertice semplificato
+
+    CellInfo() {
+        Q.setZero();
+        count = 0;
+        newVertexId = -1;
+    }
+};
+	
 
 private:
 	vector<glm::vec3> vertices;

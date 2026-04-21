@@ -170,19 +170,35 @@ void TriangleMesh::simplify(int resolution)
     std::map<GridIndex, CellInfo> grid; 
 
     // ==========================================
-    // PARTE 1: RAGGRUPPAMENTO (Leggendo dal BACKUP)
+    // PARTE 1: Quadric construction
     // ==========================================
-    for (int v = 0; v < originalVertices.size(); v++) 
+    for (size_t t = 0; t < originalTriangles.size(); t += 3) 
     {
-        glm::vec3 vertex = originalVertices[v]; // <-- Modificato
+        glm::vec3 v0 = originalVertices[originalTriangles[t]];
+        glm::vec3 v1 = originalVertices[originalTriangles[t + 1]];
+        glm::vec3 v2 = originalVertices[originalTriangles[t + 2]];
 
-        GridIndex index;
-        index.i = floor((vertex.x - minBox.x) / cellSize);
-        index.j = floor((vertex.y - minBox.y) / cellSize);
-        index.k = floor((vertex.z - minBox.z) / cellSize);
+        //plane equation (a, b, c, d)
+        glm::vec3 normal = glm::normalize(glm::cross(v1-v0, v2-v0));
+        float d = -glm::dot(normal, v1);
 
-        grid[index].sum += vertex;
-        grid[index].count += 1;
+        Eigen::Vector4d plane(normal.x, normal.y, normal.z, d);
+
+        //Quadric matrix
+        Eigen::Matrix4d Q_triangle = plane * plane.transpose();
+
+        glm::vec3 verts[3] = {v0, v1, v2};
+        for(int i = 0; i < 3; i++) {
+            GridIndex idx;
+            idx.i = floor((verts[i].x - minBox.x) / cellSize);
+            idx.j = floor((verts[i].y - minBox.y) / cellSize);
+            idx.k = floor((verts[i].z - minBox.z) / cellSize);
+
+            grid[idx].Q += Q_triangle; 
+            grid[idx].count += 1; // Può farti comodo tenerlo per debug
+        }
+
+       
     } 
 
     // ==========================================
@@ -192,9 +208,25 @@ void TriangleMesh::simplify(int resolution)
 
     for (auto it = grid.begin(); it != grid.end(); it++)
     {
-        glm::vec3 verticeMedio = it->second.sum / (float)it->second.count;
-        newVertices.push_back(verticeMedio);
-        it->second.newVertexId = newVertices.size() - 1;
+        Eigen::Matrix4d Q = it->second.Q;
+
+        Q(3, 0) = 0;
+        Q(3, 1) = 0;
+        Q(3, 2) = 0;
+        Q(3, 3) = 1;
+
+        //b = [0, 0, 0, 1]^T
+        Eigen::Vector4d b(0, 0, 0, 1);
+
+        //Using SVD to solve Q * v = b
+        Eigen::Vector4d pStar = Q.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV).solve(b);
+        
+        // Aggiungiamo il nuovo vertice ottimizzato
+        newVertices.push_back(glm::vec3(pStar.x(), pStar.y(), pStar.z()));
+        
+        // Memorizziamo l'indice per la Parte 3
+        it->second.newVertexId = (int)newVertices.size() - 1;
+    
     }
 
     // ==========================================
