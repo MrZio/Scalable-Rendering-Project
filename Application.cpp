@@ -93,10 +93,10 @@ void Application::keyPressed(int key)
 		break;
 	case GLFW_KEY_RIGHT:
 	case GLFW_KEY_KP_ADD:
-    	scene.changeLevelDetail(20);
+    	scene.changeLevelDetail(1);
     	break;
 	case GLFW_KEY_KP_SUBTRACT:		
-		scene.changeLevelDetail(-20);
+		scene.changeLevelDetail(-1);
     	break;
 	case GLFW_KEY_M:
 		break;
@@ -117,6 +117,9 @@ void Application::keyPressed(int key)
 	case GLFW_KEY_W:
 		directions[3] = true;
 		break;
+	case GLFW_KEY_L:
+    	scene.toggleAutoLOD();
+    break;
 	case GLFW_KEY_LEFT_SHIFT :
 		shift = true;
 		break;

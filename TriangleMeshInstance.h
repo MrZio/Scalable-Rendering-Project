@@ -17,7 +17,13 @@ public:
 	void render();
 	void setLOD(int level) { lodLevel = level; }
 	
-	TriangleMesh *getMesh();
+	
+	
+	glm::vec3 getPosition() const { return glm::vec3(transform[3]); }
+    
+    TriangleMesh* getMesh() const { return mesh; }
+    
+    int getLOD() const { return lodLevel; }
 	
 	void setTransform(const glm::mat4 &transform);
 	const glm::mat4 &getTransform() const;

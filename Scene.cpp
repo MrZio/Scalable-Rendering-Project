@@ -7,7 +7,7 @@
 #include "PLYReader.h"
 #include "Application.h"
 
-int gridResolution = 100; 
+int gridResolution = 100;
 int globalManualLOD = 0; // Parte da 0 (massima qualità)
 
 Scene::Scene()
@@ -58,71 +58,71 @@ bool Scene::loadMap(const string &filename)
 	string model_filename;
 
 	fin.open(filename);
-	if (!fin.is_open()) {
-        cout << "ERRORE CRITICO: Impossibile trovare il file della mappa: " << filename << endl;
+	if (!fin.is_open())
+	{
+		cout << "ERRORE CRITICO: Impossibile trovare il file della mappa: " << filename << endl;
 		return false;
-    }
+	}
 
 	// 1. Armadillo
 	fin >> model_filename;
-	if ((meshFigurine = loadMesh(model_filename)) == NULL) {
-        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+	if ((meshFigurine = loadMesh(model_filename)) == NULL)
+	{
+		cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
-    }
+	}
 
 	// 2. Muro
 	fin >> model_filename;
-	if ((meshWall = loadMesh(model_filename)) == NULL) {
-        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+	if ((meshWall = loadMesh(model_filename)) == NULL)
+	{
+		cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
-    }
+	}
 
 	// 3. Base
 	fin >> model_filename;
-	if ((meshBase = loadMesh(model_filename)) == NULL) {
-        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+	if ((meshBase = loadMesh(model_filename)) == NULL)
+	{
+		cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
-    }
+	}
 
-    // 4. Bunny
+	// 4. Bunny
 	fin >> model_filename;
-	if ((meshBunny = loadMesh(model_filename)) == NULL) {
-        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+	if ((meshBunny = loadMesh(model_filename)) == NULL)
+	{
+		cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
-    }
+	}
 
-    
-	// Semplifichiamo il Bunny 
-    // cout << "Semplificando il Bunny..." << endl;
-    // meshBunny->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
-
-	fin >> model_filename;
-	if ((meshDragon = loadMesh(model_filename)) == NULL)
-		return false;
-
+	// Semplifichiamo il Bunny
+	// cout << "Semplificando il Bunny..." << endl;
+	// meshBunny->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
 
 	// 5. Dragon
 	fin >> model_filename;
-	if ((meshDragon = loadMesh(model_filename)) == NULL) {
-        cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
+	if ((meshDragon = loadMesh(model_filename)) == NULL)
+	{
+		cout << "ERRORE CRITICO: Impossibile caricare il modello: " << model_filename << endl;
 		return false;
-    }
+	}
 
-    // Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
-    // cout << "Semplificando il Drago..." << endl;
-    //meshDragon->simplify(100); 
-	//meshDragon->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
+	// Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
+	// cout << "Semplificando il Drago..." << endl;
+	// meshDragon->simplify(100);
+	// meshDragon->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
 	cout << "Pre-computing LODs for Armadillo..." << endl;
-    meshFigurine->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
-    
-    cout << "Pre-computing LODs for Bunny..." << endl;
-    meshBunny->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
-    
-    cout << "Pre-computing LODs for Dragon..." << endl;
-    meshDragon->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+	meshFigurine->computeAllLODs(SimplifyMode::QEM_STANDARD);
+
+	cout << "Pre-computing LODs for Bunny..." << endl;
+	meshBunny->computeAllLODs(SimplifyMode::QEM_STANDARD);
+
+	cout << "Pre-computing LODs for Dragon..." << endl;
+	meshDragon->computeAllLODs(SimplifyMode::QEM_STANDARD);
 
 	buildRoom();
-    return true;
+	return true;
 }
 
 // Loads the mesh into CPU memory and sends it to GPU memory (using GL)
@@ -151,6 +151,84 @@ TriangleMesh *Scene::loadMesh(const string &filename) const
 void Scene::update(int deltaTime)
 {
 	currentTime += deltaTime;
+
+	// Se vuoi usare i tasti, commenta tutto quello che segue!
+	if (bAutoLOD)
+	{
+		// Altrimenti, la matematica automatica sovrascriverà sempre i tuoi tasti.
+
+		int maxCost = 80000; // Alza un po' il budget per vedere i cambiamenti
+		int currentTotalCost = 0;
+
+		// 1. Reset
+		for (TriangleMeshInstance *obj : objects)
+		{
+			obj->setLOD(3); // Tutti partono al minimo
+			currentTotalCost += obj->getMesh()->getCost(3);
+		}
+
+		// 2. Greedy Loop
+		bool canUpgrade = true;
+		glm::vec3 camPos = camera.getPosition();
+
+		while (currentTotalCost < maxCost && canUpgrade)
+		{
+			canUpgrade = false;
+			float bestScore = -1.0f;
+			TriangleMeshInstance *bestObj = nullptr;
+
+			for (TriangleMeshInstance *obj : objects)
+			{
+				int L = obj->getLOD();
+				if (L == 0)
+					continue;
+
+				float D = glm::distance(camPos, obj->getPosition());
+				if (D < 0.1f)
+					D = 0.1f;
+
+				float d = obj->getMesh()->getDiagonal();
+
+				// Usiamo il calcolo che abbiamo discusso
+				float benefitAttuale = d / (D * (1 << L));
+				float benefitFuturo = d / (D * (1 << (L - 1)));
+				float deltaBenefit = benefitFuturo - benefitAttuale;
+
+				int deltaCost = obj->getMesh()->getCost(L - 1) - obj->getMesh()->getCost(L);
+
+				if (deltaCost > 0)
+				{
+					float score = deltaBenefit / (float)deltaCost;
+					if (score > bestScore)
+					{
+						bestScore = score;
+						bestObj = obj;
+					}
+				}
+			}
+
+			if (bestObj != nullptr)
+			{
+				int L = bestObj->getLOD();
+				int costToUpgrade = bestObj->getMesh()->getCost(L - 1) - bestObj->getMesh()->getCost(L);
+
+				if (currentTotalCost + costToUpgrade <= maxCost)
+				{
+					bestObj->setLOD(L - 1);
+					currentTotalCost += costToUpgrade;
+					canUpgrade = true;
+				}
+			}
+		}
+	}
+	else
+	{
+		// MODALITÀ MANUALE: applichiamo il valore dei tasti a tutti gli oggetti
+		for (TriangleMeshInstance *obj : objects)
+		{
+			obj->setLOD(globalManualLOD);
+		}
+	}
 }
 
 // Render the scene. First the room, then the mesh it there is one loaded.
@@ -159,12 +237,18 @@ void Scene::render()
 {
 	Application::instance().getShader()->use();
 	camera.render();
-	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++) {
-        // Supponendo che TriangleMeshInstance abbia un metodo per impostare il LOD
-        // (Se non lo ha, dovrai aggiungerlo nella classe TriangleMeshInstance)
-        (*it)->setLOD(globalManualLOD); 
+	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
+	{
+		// Supponendo che TriangleMeshInstance abbia un metodo per impostare il LOD
+		// (Se non lo ha, dovrai aggiungerlo nella classe TriangleMeshInstance)
+		
 		(*it)->render();
-    }
+	}
+}
+
+void Scene::toggleAutoLOD() {
+    bAutoLOD = !bAutoLOD;
+    cout << "Auto LOD is now " << (bAutoLOD ? "ON" : "OFF") << endl;
 }
 
 VectorCamera &Scene::getCamera()
@@ -172,22 +256,30 @@ VectorCamera &Scene::getCamera()
 	return camera;
 }
 
-int Scene::getGridResolution() {
+int Scene::getGridResolution()
+{
 	return gridResolution;
 }
 
-void Scene::setGridResolution(int newResolution) {
+void Scene::setGridResolution(int newResolution)
+{
 	gridResolution = newResolution;
 }
 
-void Scene::changeLevelDetail(int delta) {
-    globalManualLOD += delta;
-    
-    // Assicuriamoci che l'indice rimanga tra 0 e 3 (NUM_LODS - 1)
-    if(globalManualLOD < 0) globalManualLOD = 0;
-    if(globalManualLOD > 3) globalManualLOD = 3;
+void Scene::changeLevelDetail(int delta)
+{
+	// Spegniamo l'automatico non appena l'utente tocca un tasto manuale
+	bAutoLOD = false;
 
-    cout << "Switched to pre-computed LOD Level: " << globalManualLOD << endl;
+	globalManualLOD += delta;
+
+	// Assicuriamoci che l'indice rimanga tra 0 e 3 (NUM_LODS - 1)
+	if (globalManualLOD < 0)
+		globalManualLOD = 0;
+	if (globalManualLOD > 3)
+		globalManualLOD = 3;
+
+	cout << "Auto LOD OFF - Switched to Manual LOD Level: " << globalManualLOD << endl;
 }
 // Init & render the room. Both the floor and the walls are instances of the
 // same initial cube scaled and translated to build the room.

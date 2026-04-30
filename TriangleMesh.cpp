@@ -144,19 +144,21 @@ void TriangleMesh::sendToOpenGL(int lvl, const vector<glm::vec3>& currentVerts, 
 
 void TriangleMesh::render(int lodLevel) const
 {
-    // Sicurezza: controlla che il livello sia valido e inizializzato
-    if (lodLevel < 0 || lodLevel >= NUM_LODS || vao[lodLevel] == (GLuint)-1) return;
+    // FALLBACK: Se ci chiedono un livello che non esiste (come per i muri), usiamo l'originale (0)
+    if (lodLevel < 0 || lodLevel >= NUM_LODS || vao[lodLevel] == (GLuint)-1) {
+        lodLevel = 0; 
+    }
+
+    // Se perfino lo zero è vuoto, c'è un problema, interrompiamo.
+    if (vao[lodLevel] == (GLuint)-1) return;
 
     Application::instance().getShader()->use();
-
-    // Dobbiamo specificare QUALE slot dell'array vogliamo usare[cite: 10]
     glBindVertexArray(vao[lodLevel]); 
     
     glEnableVertexAttribArray(posLocation);
     glEnableVertexAttribArray(normalLocation);
     glEnableVertexAttribArray(colorLocation);
     
-    // Disegniamo solo i triangoli presenti in questo specifico LOD[cite: 8, 10]
     glDrawArrays(GL_TRIANGLES, 0, numTrianglesLOD[lodLevel] * 3);
 }
 
@@ -304,11 +306,15 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
         int newV2 = grid[idx2].newVertexId[subNodeIndex];
         int newV3 = grid[idx3].newVertexId[subNodeIndex];
     
-        if(newV1 != newV2 && newV2 != newV3 && newV1 != newV3) 
+        // AGGIUNTA: Assicuriamoci che nessuno dei 3 vertici sia "vuoto" (-1)
+        if(newV1 != -1 && newV2 != -1 && newV3 != -1) 
         {
-            newTriangles.push_back(newV1);
-            newTriangles.push_back(newV2);
-            newTriangles.push_back(newV3);
+            if(newV1 != newV2 && newV2 != newV3 && newV1 != newV3) 
+            {
+                newTriangles.push_back(newV1);
+                newTriangles.push_back(newV2);
+                newTriangles.push_back(newV3);
+            }
         }
     }
 

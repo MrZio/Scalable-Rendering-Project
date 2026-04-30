@@ -35,6 +35,7 @@ public:
     void setGridResolution(int newResolution);
 	std::map<std::pair<int, int>, char> grid; // Mappa che associa a ogni cella (x, z) il suo tipo di blocco (0, 1, 2, 3 o 4)
 
+	void toggleAutoLOD();
 	VectorCamera &getCamera();
 
 private:
@@ -47,6 +48,7 @@ private:
 	TriangleMesh *meshCube, *meshFigurine, *meshWall, *meshBase, *meshBunny, *meshDragon;
 	vector<TriangleMeshInstance *> objects;
 	float currentTime;
+	bool bAutoLOD = true; // Se vero usa il Greedy, se falso usa i tasti
 
 };
 
