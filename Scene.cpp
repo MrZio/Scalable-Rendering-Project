@@ -8,6 +8,7 @@
 #include "Application.h"
 
 int gridResolution = 100; 
+int globalManualLOD = 0; // Parte da 0 (massima qualità)
 
 Scene::Scene()
 {
@@ -43,7 +44,7 @@ void Scene::init()
 {
 	meshCube = new TriangleMesh();
 	meshCube->buildCube();
-	meshCube->sendToOpenGL();
+	meshCube->sendToOpenGL(0, meshCube->getVertices(), meshCube->getTriangles());
 	currentTime = 0.0f;
 
 	camera.init(glm::vec3(0.f, 1.0f, 2.f));
@@ -92,8 +93,8 @@ bool Scene::loadMap(const string &filename)
 
     
 	// Semplifichiamo il Bunny 
-    cout << "Semplificando il Bunny..." << endl;
-    meshBunny->simplify(gridResolution); 
+    // cout << "Semplificando il Bunny..." << endl;
+    // meshBunny->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
 
 	fin >> model_filename;
 	if ((meshDragon = loadMesh(model_filename)) == NULL)
@@ -108,12 +109,20 @@ bool Scene::loadMap(const string &filename)
     }
 
     // Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
-    cout << "Semplificando il Drago..." << endl;
-    meshDragon->simplify(100); 
+    // cout << "Semplificando il Drago..." << endl;
+    //meshDragon->simplify(100); 
+	//meshDragon->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
+	cout << "Pre-computing LODs for Armadillo..." << endl;
+    meshFigurine->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+    
+    cout << "Pre-computing LODs for Bunny..." << endl;
+    meshBunny->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+    
+    cout << "Pre-computing LODs for Dragon..." << endl;
+    meshDragon->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
 
 	buildRoom();
-
-	return true;
+    return true;
 }
 
 // Loads the mesh into CPU memory and sends it to GPU memory (using GL)
@@ -129,7 +138,7 @@ TriangleMesh *Scene::loadMesh(const string &filename) const
 	mesh = new TriangleMesh();
 	bool bSuccess = reader.readMesh(filename, *mesh);
 	if (bSuccess)
-		mesh->sendToOpenGL();
+		mesh->sendToOpenGL(0, mesh->getVertices(), mesh->getTriangles());
 	else
 	{
 		delete mesh;
@@ -150,8 +159,12 @@ void Scene::render()
 {
 	Application::instance().getShader()->use();
 	camera.render();
-	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
+	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++) {
+        // Supponendo che TriangleMeshInstance abbia un metodo per impostare il LOD
+        // (Se non lo ha, dovrai aggiungerlo nella classe TriangleMeshInstance)
+        (*it)->setLOD(globalManualLOD); 
 		(*it)->render();
+    }
 }
 
 VectorCamera &Scene::getCamera()
@@ -168,12 +181,13 @@ void Scene::setGridResolution(int newResolution) {
 }
 
 void Scene::changeLevelDetail(int delta) {
-    gridResolution += delta;
-    if(gridResolution < 1) gridResolution = 1;
+    globalManualLOD += delta;
+    
+    // Assicuriamoci che l'indice rimanga tra 0 e 3 (NUM_LODS - 1)
+    if(globalManualLOD < 0) globalManualLOD = 0;
+    if(globalManualLOD > 3) globalManualLOD = 3;
 
-    cout << "Semplificando..." << endl;
-    if(meshBunny != NULL) meshBunny->simplify(gridResolution);
-    if(meshDragon != NULL) meshDragon->simplify(gridResolution);
+    cout << "Switched to pre-computed LOD Level: " << globalManualLOD << endl;
 }
 // Init & render the room. Both the floor and the walls are instances of the
 // same initial cube scaled and translated to build the room.

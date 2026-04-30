@@ -7,7 +7,7 @@
 #define ROTATION_DELTA_PITCH 0.05f
 
 
-// Initialize GL and the attributes of Application
+SimplifyMode currentMode = SimplifyMode::QEM_STANDARD;
 
 void Application::init(GLFWwindow* window)
 {
@@ -98,6 +98,8 @@ void Application::keyPressed(int key)
 	case GLFW_KEY_KP_SUBTRACT:		
 		scene.changeLevelDetail(-20);
     	break;
+	case GLFW_KEY_M:
+		break;
 	case GLFW_KEY_LEFT:
 	case GLFW_KEY_DOWN:
 	case GLFW_KEY_UP:
