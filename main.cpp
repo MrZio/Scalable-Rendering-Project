@@ -4,8 +4,8 @@
 #include "Application.h"
 
 
-#define VIEWPORT_INIT_WIDTH 640
-#define VIEWPORT_INIT_HEIGHT 480
+#define VIEWPORT_INIT_WIDTH 900
+#define VIEWPORT_INIT_HEIGHT 600
 
 #define TARGET_FRAMERATE 60.0f
 

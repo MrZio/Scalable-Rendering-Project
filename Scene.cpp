@@ -113,13 +113,13 @@ bool Scene::loadMap(const string &filename)
 	// meshDragon->simplify(100);
 	// meshDragon->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
 	cout << "Pre-computing LODs for Armadillo..." << endl;
-	meshFigurine->computeAllLODs(SimplifyMode::QEM_STANDARD);
+	meshFigurine->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
 
 	cout << "Pre-computing LODs for Bunny..." << endl;
-	meshBunny->computeAllLODs(SimplifyMode::QEM_STANDARD);
+	meshBunny->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
 
 	cout << "Pre-computing LODs for Dragon..." << endl;
-	meshDragon->computeAllLODs(SimplifyMode::QEM_STANDARD);
+	meshDragon->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
 
 	buildRoom();
 	return true;
@@ -157,7 +157,7 @@ void Scene::update(int deltaTime)
 	{
 		// Altrimenti, la matematica automatica sovrascriverà sempre i tuoi tasti.
 
-		int maxCost = 80000; // Alza un po' il budget per vedere i cambiamenti
+		int maxCost = 200000; // Alza un po' il budget per vedere i cambiamenti
 		int currentTotalCost = 0;
 
 		// 1. Reset

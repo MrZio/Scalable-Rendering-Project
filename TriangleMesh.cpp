@@ -8,6 +8,7 @@
 using namespace std;
 
 
+
 TriangleMesh::TriangleMesh()
 {
     for(int i = 0; i < NUM_LODS; i++) {
@@ -176,14 +177,14 @@ void TriangleMesh::free()
 
 void TriangleMesh::simplify(int resolution, SimplifyMode mode)
 {
-    // Sicurezza: se non c'è il backup, fermiamo tutto!
+    // Sicurezza: se non c'è il backup, ci fermiamo 
     if (originalVertices.empty()) return;
 
     // 1. CALCOLO DEL BOUNDING BOX 
     glm::vec3 minBox = originalVertices[0];
     glm::vec3 maxBox = originalVertices[0];
     
-    for (int i = 0; i < originalVertices.size(); i++) {
+    for (size_t i = 0; i < originalVertices.size(); i++) {
         minBox.x = min(minBox.x, originalVertices[i].x);
         minBox.y = min(minBox.y, originalVertices[i].y);
         minBox.z = min(minBox.z, originalVertices[i].z);
@@ -197,28 +198,50 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
     float maxAxis = max(maxBox.x - minBox.x, max(maxBox.y - minBox.y, maxBox.z - minBox.z));
     float cellSize = maxAxis / (float)resolution;
 
-    // CREIAMO UNA MAPPA PULITA PER QUESTO CICLO
+    // Creiamo la mappa GLOBALE della griglia
     std::map<GridIndex, CellInfo> grid; 
+
+    // ==========================================
+    // PASSAGGIO 0: Calcolo Normali dei Vertici (Solo se in modalità Normal Clustering)
+    // ==========================================
+    vector<glm::vec3> vertNormals(originalVertices.size(), glm::vec3(0.0f));
+    if (mode == SimplifyMode::NORMAL_CLUSTERING) {
+        for (size_t t = 0; t < originalTriangles.size(); t += 3) {
+            glm::vec3 v0 = originalVertices[originalTriangles[t]];
+            glm::vec3 v1 = originalVertices[originalTriangles[t+1]];
+            glm::vec3 v2 = originalVertices[originalTriangles[t+2]];
+
+            glm::vec3 crossP = glm::cross(v1 - v0, v2 - v0);
+            // Non normalizziamo qui: i triangoli più grandi influenzeranno di più la normale
+            vertNormals[originalTriangles[t]] += crossP;
+            vertNormals[originalTriangles[t+1]] += crossP;
+            vertNormals[originalTriangles[t+2]] += crossP;
+        }
+        // Normalizzazione finale
+        for (size_t i = 0; i < vertNormals.size(); i++) {
+            // Tolleranza bassissima per i modelli giganti come il Drago
+            if (glm::length(vertNormals[i]) > 1e-12f) {
+                vertNormals[i] = glm::normalize(vertNormals[i]);
+            }
+        }
+    }
 
     // ==========================================
     // PARTE 1: Quadric construction & Normal Clustering
     // ==========================================
     for (size_t t = 0; t < originalTriangles.size(); t += 3) 
     {
-        glm::vec3 v0 = originalVertices[originalTriangles[t]];
-        glm::vec3 v1 = originalVertices[originalTriangles[t + 1]];
-        glm::vec3 v2 = originalVertices[originalTriangles[t + 2]];
+        int vIdx[3] = { originalTriangles[t], originalTriangles[t + 1], originalTriangles[t + 2] };
+        glm::vec3 verts[3] = { originalVertices[vIdx[0]], originalVertices[vIdx[1]], originalVertices[vIdx[2]] };
 
-        glm::vec3 normal = glm::normalize(glm::cross(v1-v0, v2-v0));
+        // Calcoliamo la normale della faccia (ci serve per il piano della Quadrica)
+        glm::vec3 crossP = glm::cross(verts[1] - verts[0], verts[2] - verts[0]);
+        float area = glm::length(crossP);
+        
+        // LA FIX DEL DRAGO: 1e-12f per non scartare i micro-triangoli
+        if (area < 1e-12f) continue; 
+        glm::vec3 faceNormal = crossP / area; 
 
-        int subNodeIndex = 0;
-        if (mode == SimplifyMode::NORMAL_CLUSTERING) {
-            subNodeIndex = (normal.x > 0.0f ? 1 : 0) | 
-                           (normal.y > 0.0f ? 2 : 0) | 
-                           (normal.z > 0.0f ? 4 : 0);
-        }
-
-        glm::vec3 verts[3] = {v0, v1, v2};
         for(int i = 0; i < 3; i++) {
             GridIndex idx;
             idx.i = floor((verts[i].x - minBox.x) / cellSize);
@@ -231,17 +254,27 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
             cellCenter.y = minBox.y + (idx.j + 0.5f) * cellSize;
             cellCenter.z = minBox.z + (idx.k + 0.5f) * cellSize;
 
-            // 2. Calcoliamo 'd' RELATIVO al centro della cella (come da slide 13)
-            float d_relativo = -glm::dot(normal, v0 - cellCenter);
+            // 2. Calcoliamo 'd' RELATIVO al centro della cella (usando verts[i] per precisione)
+            float d_relativo = -glm::dot(faceNormal, verts[i] - cellCenter);
 
-            Eigen::Vector4d plane(normal.x, normal.y, normal.z, d_relativo);
+            Eigen::Vector4d plane(faceNormal.x, faceNormal.y, faceNormal.z, d_relativo);
             Eigen::Matrix4d Q_triangle = plane * plane.transpose();
+
+            int subNodeIndex = 0;
+            if (mode == SimplifyMode::NORMAL_CLUSTERING) {
+                // IL SEGRETO: Usiamo la normale del SINGOLO VERTICE per non strappare la mesh!
+                glm::vec3 vNorm = vertNormals[vIdx[i]];
+                subNodeIndex = (vNorm.x > 0.0f ? 1 : 0) | 
+                               (vNorm.y > 0.0f ? 2 : 0) | 
+                               (vNorm.z > 0.0f ? 4 : 0);
+            }
 
             grid[idx].Q[subNodeIndex] += Q_triangle; 
             grid[idx].count[subNodeIndex] += 1;
         }
     }
-   // ==========================================
+
+    // ==========================================
     // PARTE 2: Creazione Nuovi Vertici (Multi-SVD)
     // ==========================================
     vector<glm::vec3> newVertices;
@@ -263,8 +296,7 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
             Q(3, 0) = 0; Q(3, 1) = 0; Q(3, 2) = 0; Q(3, 3) = 1;
             Eigen::Vector4d b(0, 0, 0, 1);
 
-            // SVD ora troverà il punto a norma minima (ovvero quello più vicino a 0,0,0)
-            // Poiché lo spazio è relativo, questo significa che troverà il punto più vicino al centro della cella!
+            // SVD ora troverà il punto a norma minima (ovvero quello più vicino a 0,0,0 locale)
             Eigen::Vector4d pStar = Q.jacobiSvd(Eigen::ComputeFullU | Eigen::ComputeFullV).solve(b);
             
             // Sommiamo cellCenter per "traslare" il punto dalla cella al mondo intero
@@ -274,41 +306,43 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
     }
 
     // ==========================================
-    // PARTE 3: RICOSTRUZIONE TRIANGOLI (Leggendo dal BACKUP)
+    // PARTE 3: RICOSTRUZIONE TRIANGOLI (from BACKUP)
     // ==========================================
     vector<int> newTriangles;
     
     for (size_t t = 0; t < originalTriangles.size(); t += 3)
     {
-        int v1 = originalTriangles[t];       
-        int v2 = originalTriangles[t + 1];   
-        int v3 = originalTriangles[t + 2];   
+        int vIdx[3] = { originalTriangles[t], originalTriangles[t + 1], originalTriangles[t + 2] };
+        glm::vec3 verts[3] = { originalVertices[vIdx[0]], originalVertices[vIdx[1]], originalVertices[vIdx[2]] };
 
-        glm::vec3 pos1 = originalVertices[v1]; 
-        glm::vec3 pos2 = originalVertices[v2];
-        glm::vec3 pos3 = originalVertices[v3]; 
-
-        glm::vec3 normal = glm::normalize(glm::cross(pos2 - pos1, pos3 - pos1));
-
-        int subNodeIndex = 0;
+        // 1. Calcoliamo i cestini (subNodes) per i 3 vertici
+        int subNode[3] = {0, 0, 0};
         if (mode == SimplifyMode::NORMAL_CLUSTERING) {
-            subNodeIndex = (normal.x > 0.0f ? 1 : 0) | 
-                           (normal.y > 0.0f ? 2 : 0) | 
-                           (normal.z > 0.0f ? 4 : 0);
+            for(int i = 0; i < 3; i++) {
+                glm::vec3 vNorm = vertNormals[vIdx[i]];
+                subNode[i] = (vNorm.x > 0.0f ? 1 : 0) | 
+                             (vNorm.y > 0.0f ? 2 : 0) | 
+                             (vNorm.z > 0.0f ? 4 : 0);
+            }
         }
 
-        GridIndex idx1 = { (int)floor((pos1.x - minBox.x) / cellSize), (int)floor((pos1.y - minBox.y) / cellSize), (int)floor((pos1.z - minBox.z) / cellSize) };
-        GridIndex idx2 = { (int)floor((pos2.x - minBox.x) / cellSize), (int)floor((pos2.y - minBox.y) / cellSize), (int)floor((pos2.z - minBox.z) / cellSize) };
-        GridIndex idx3 = { (int)floor((pos3.x - minBox.x) / cellSize), (int)floor((pos3.y - minBox.y) / cellSize), (int)floor((pos3.z - minBox.z) / cellSize) };
+        // 2. Calcoliamo gli indici della griglia per i 3 vertici
+        GridIndex idx[3];
+        for(int i = 0; i < 3; i++) {
+            idx[i].i = floor((verts[i].x - minBox.x) / cellSize);
+            idx[i].j = floor((verts[i].y - minBox.y) / cellSize);
+            idx[i].k = floor((verts[i].z - minBox.z) / cellSize);
+        }
 
-        // Peschiamo i vertici dal cestino corretto!
-        int newV1 = grid[idx1].newVertexId[subNodeIndex];
-        int newV2 = grid[idx2].newVertexId[subNodeIndex];
-        int newV3 = grid[idx3].newVertexId[subNodeIndex];
+        // 3. Peschiamo i vertici dal cestino corretto
+        int newV1 = grid[idx[0]].newVertexId[subNode[0]];
+        int newV2 = grid[idx[1]].newVertexId[subNode[1]];
+        int newV3 = grid[idx[2]].newVertexId[subNode[2]];
     
-        // AGGIUNTA: Assicuriamoci che nessuno dei 3 vertici sia "vuoto" (-1)
+        // 4. Sicurezza: Assicuriamoci che nessuno dei 3 vertici sia "vuoto" (-1)
         if(newV1 != -1 && newV2 != -1 && newV3 != -1) 
         {
+            // Sicurezza: Evitiamo di creare triangoli degeneri (linee o punti)
             if(newV1 != newV2 && newV2 != newV3 && newV1 != newV3) 
             {
                 newTriangles.push_back(newV1);
@@ -325,8 +359,6 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
     triangles = newTriangles;
 
     cout << "Risoluzione " << resolution << " -> Dopo: " << vertices.size() << " vertici, " << triangles.size() / 3 << " triangoli." << endl;
-    
-     
 }
 
 void TriangleMesh::computeAllLODs(SimplifyMode mode)
@@ -341,8 +373,11 @@ void TriangleMesh::computeAllLODs(SimplifyMode mode)
         cout << "Generando LOD " << lvl << " (Res: " << resolutions[lvl] << ")..." << endl;
 
         // Reset ai dati originali prima di ogni semplificazione[cite: 9]
-        vertices = originalVertices;
-        triangles = originalTriangles;
+        //vertices = originalVertices;
+        //triangles = originalTriangles;
+
+        vertices.clear();
+        triangles.clear();
 
         // Esegui la semplificazione (che aggiorna 'vertices' e 'triangles' della classe)
         simplify(resolutions[lvl], mode);
