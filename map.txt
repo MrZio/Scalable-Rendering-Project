@@ -3,3 +3,4 @@ models/room/Wall.ply
 models/room/Base.ply
 models/textured/bunny.ply
 models/textured/dragon.ply
+models/textured/happy.ply

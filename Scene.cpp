@@ -17,6 +17,7 @@ Scene::Scene()
 	meshWall = NULL;
 	meshBunny = NULL;
 	meshDragon = NULL;
+	meshHappy = NULL;
 }
 
 Scene::~Scene()
@@ -33,6 +34,8 @@ Scene::~Scene()
 		delete meshBunny;
 	if (meshDragon != NULL)
 		delete meshDragon;
+	if (meshHappy != NULL)
+		delete meshHappy;
 	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
 		delete *it;
 }
@@ -108,6 +111,14 @@ bool Scene::loadMap(const string &filename)
 		return false;
 	}
 
+	// 6. Happy
+	fin >> model_filename;
+	meshHappy = loadMesh(model_filename);
+	if (meshHappy == NULL)
+	{
+		cout << "ATTENZIONE: Impossibile caricare " << model_filename << ". Il piedistallo sara' vuoto." << endl;
+	}
+
 	// Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
 	// cout << "Semplificando il Drago..." << endl;
 	// meshDragon->simplify(100);
@@ -120,6 +131,12 @@ bool Scene::loadMap(const string &filename)
 
 	cout << "Pre-computing LODs for Dragon..." << endl;
 	meshDragon->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+
+	if (meshHappy != NULL)
+	{
+		cout << "Pre-computing LODs for Happy..." << endl;
+		meshHappy->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING); // Ricorda di usare QEM per l'organico!
+	}
 
 	buildRoom();
 	return true;
@@ -241,14 +258,15 @@ void Scene::render()
 	{
 		// Supponendo che TriangleMeshInstance abbia un metodo per impostare il LOD
 		// (Se non lo ha, dovrai aggiungerlo nella classe TriangleMeshInstance)
-		
+
 		(*it)->render();
 	}
 }
 
-void Scene::toggleAutoLOD() {
-    bAutoLOD = !bAutoLOD;
-    cout << "Auto LOD is now " << (bAutoLOD ? "ON" : "OFF") << endl;
+void Scene::toggleAutoLOD()
+{
+	bAutoLOD = !bAutoLOD;
+	cout << "Auto LOD is now " << (bAutoLOD ? "ON" : "OFF") << endl;
 }
 
 VectorCamera &Scene::getCamera()
@@ -316,7 +334,7 @@ void Scene::buildRoom()
 			float realZ = (z * tileSize) - 10.0f;
 
 			// CASO A: Pavimento (Lo creiamo sempre, per qualsiasi blocco valido)
-			if (tileType == '0' || tileType == '1' || tileType == '2' || tileType == '3' || tileType == '4')
+			if (tileType == '0' || tileType == '1' || tileType == '2' || tileType == '3' || tileType == '4' || tileType == '5')
 			{
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, -0.05f, realZ));
@@ -397,6 +415,27 @@ void Scene::buildRoom()
 				instance = new TriangleMeshInstance();
 				instance->init(meshDragon, glm::vec4(1.0f), transform, 0.15f, 0.75f);
 				objects.push_back(instance);
+			}
+			if (tileType == '5')
+			{
+				// 1. Piedistallo
+				transform = glm::mat4(1.0f);
+				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
+				instance = new TriangleMeshInstance();
+				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
+				objects.push_back(instance);
+
+				// 2. Happy sopra al piedistallo
+				if (meshHappy != NULL)
+				{
+					transform = glm::mat4(1.0f);
+					transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
+					transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
+					instance = new TriangleMeshInstance();
+					instance->init(meshHappy, glm::vec4(1.0f), transform, 0.15f, 0.4f);
+					objects.push_back(instance);
+				}
 			}
 		}
 		z++; // Finito di leggere la riga, incrementiamo l'asse Z

@@ -45,7 +45,7 @@ private:
 
 private:
 	VectorCamera camera;
-	TriangleMesh *meshCube, *meshFigurine, *meshWall, *meshBase, *meshBunny, *meshDragon;
+	TriangleMesh *meshCube, *meshFigurine, *meshWall, *meshBase, *meshBunny, *meshDragon, *meshHappy;
 	vector<TriangleMeshInstance *> objects;
 	float currentTime;
 	bool bAutoLOD = true; // Se vero usa il Greedy, se falso usa i tasti

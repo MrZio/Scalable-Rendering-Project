@@ -16,9 +16,14 @@ bool PLYReader::readMesh(const string &filename, TriangleMesh &mesh)
 	bool hasColors = false;
 	bool hasAlpha = false;
 
+	cout << "DEBUG: Tentativo apertura file: [" << filename << "]" << endl;
+
 	fin.open(filename.c_str(), ios_base::in | ios_base::binary);
 	if(!fin.is_open())
+	{	cout << "DEBUG: APERTURA FALLITA per: [" << filename << "]" << endl;
 		return false;
+	}
+	cout << "DEBUG: file aperto con successo" << endl;
 	if(!loadHeader(fin, nVertices, nFaces, hasColors, hasAlpha))
 	{
 		fin.close();
@@ -55,21 +60,39 @@ bool PLYReader::loadHeader(ifstream &fin, int &nVertices, int &nFaces, bool &has
 	hasColors = false;
 	hasAlpha = false;
 
-	if(!getline(fin, line) || line.compare(0, 3, "ply") != 0)
+	if(!getline(fin, line))
+	{
+		cout << "DEBUG: impossibile leggere prima riga" << endl;
 		return false;
+	}
+	cout << "DEBUG prima riga: [" << line << "] lunghezza=" << line.size() << endl;
+
+	if(line.compare(0, 3, "ply") != 0)
+	{
+		cout << "DEBUG: prima riga non e' 'ply', return false" << endl;
+		return false;
+	}
+
 	while(getline(fin, line))
 	{
+		cout << "DEBUG header riga: [" << line << "] lunghezza=" << line.size() << endl;
+
 		if(line.compare(0, 10, "end_header") == 0)
+		{
+			cout << "DEBUG: trovato end_header, esco dal loop" << endl;
 			break;
+		}
 		if(line.compare(0, 14, "element vertex") == 0)
 		{
 			nVertices = atoi(&line[15]);
+			cout << "DEBUG: trovato element vertex, nVertices=" << nVertices << endl;
 			parsingVertex = true;
 			continue;
 		}
 		if(line.compare(0, 12, "element face") == 0)
 		{
 			nFaces = atoi(&line[13]);
+			cout << "DEBUG: trovato element face, nFaces=" << nFaces << endl;
 			parsingVertex = false;
 			continue;
 		}
@@ -81,8 +104,15 @@ bool PLYReader::loadHeader(ifstream &fin, int &nVertices, int &nFaces, bool &has
 				hasAlpha = true;
 		}
 	}
+
+	cout << "DEBUG fine loop: nVertices=" << nVertices << " nFaces=" << nFaces << endl;
+
 	if(nVertices <= 0)
+	{
+		cout << "DEBUG: nVertices <= 0, return false" << endl;
 		return false;
+	}
+
 	cout << "Loading triangle mesh" << endl;
 	cout << "\tVertices = " << nVertices << endl;
 	cout << "\tFaces = " << nFaces << endl;

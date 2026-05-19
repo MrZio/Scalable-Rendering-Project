@@ -262,7 +262,7 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
 
             int subNodeIndex = 0;
             if (mode == SimplifyMode::NORMAL_CLUSTERING) {
-                // IL SEGRETO: Usiamo la normale del SINGOLO VERTICE per non strappare la mesh!
+                //Usiamo la normale del SINGOLO VERTICE per non strappare la mesh!
                 glm::vec3 vNorm = vertNormals[vIdx[i]];
                 subNodeIndex = (vNorm.x > 0.0f ? 1 : 0) | 
                                (vNorm.y > 0.0f ? 2 : 0) | 
@@ -306,7 +306,7 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
     }
 
     // ==========================================
-    // PARTE 3: RICOSTRUZIONE TRIANGOLI (from BACKUP)
+    // PARTE 3: RICOSTRUZIONE TRIANGOLI (Leggendo dal BACKUP)
     // ==========================================
     vector<int> newTriangles;
     
@@ -315,7 +315,7 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
         int vIdx[3] = { originalTriangles[t], originalTriangles[t + 1], originalTriangles[t + 2] };
         glm::vec3 verts[3] = { originalVertices[vIdx[0]], originalVertices[vIdx[1]], originalVertices[vIdx[2]] };
 
-        // 1. Calcoliamo i cestini (subNodes) per i 3 vertici
+        // 1. Calcoliamo i cestini (subNodes) in modo INDIPENDENTE usando le vertNormals!
         int subNode[3] = {0, 0, 0};
         if (mode == SimplifyMode::NORMAL_CLUSTERING) {
             for(int i = 0; i < 3; i++) {
@@ -334,15 +334,14 @@ void TriangleMesh::simplify(int resolution, SimplifyMode mode)
             idx[i].k = floor((verts[i].z - minBox.z) / cellSize);
         }
 
-        // 3. Peschiamo i vertici dal cestino corretto
+        // 3. Peschiamo i vertici dai cestini CORRETTI
         int newV1 = grid[idx[0]].newVertexId[subNode[0]];
         int newV2 = grid[idx[1]].newVertexId[subNode[1]];
         int newV3 = grid[idx[2]].newVertexId[subNode[2]];
     
-        // 4. Sicurezza: Assicuriamoci che nessuno dei 3 vertici sia "vuoto" (-1)
+        // 4. Assicuriamoci che nessuno dei 3 vertici sia "vuoto" (-1)
         if(newV1 != -1 && newV2 != -1 && newV3 != -1) 
         {
-            // Sicurezza: Evitiamo di creare triangoli degeneri (linee o punti)
             if(newV1 != newV2 && newV2 != newV3 && newV1 != newV3) 
             {
                 newTriangles.push_back(newV1);
