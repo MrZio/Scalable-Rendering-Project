@@ -106,6 +106,7 @@ private:
 
 static const int NUM_LODS = 4;
 int numTrianglesLOD[NUM_LODS];
+mutable float cachedDiagonal = -1.0f;
 // I dati originali ci servono ancora intatti in RAM per poter calcolare i LOD peggiori
 vector<glm::vec3> originalVertices;
 vector<int> originalTriangles;

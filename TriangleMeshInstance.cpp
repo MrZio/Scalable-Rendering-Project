@@ -8,6 +8,7 @@ TriangleMeshInstance::TriangleMeshInstance()
 	mesh = NULL;
 	metallic = 0.0f;
 	roughness = 1.0f;
+	cooldownFrames = 0;
 }
 
 TriangleMeshInstance::~TriangleMeshInstance()
@@ -115,3 +116,4 @@ float TriangleMeshInstance::getRoughness() const
 {
 	return roughness;
 }
+

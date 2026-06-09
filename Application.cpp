@@ -120,6 +120,9 @@ void Application::keyPressed(int key)
 	case GLFW_KEY_L:
     	scene.toggleAutoLOD();
     break;
+	case GLFW_KEY_P:
+		scene.togglePVSCulling();
+		break;
 	case GLFW_KEY_LEFT_SHIFT :
 		shift = true;
 		break;

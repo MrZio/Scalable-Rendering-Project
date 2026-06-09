@@ -38,10 +38,15 @@ public:
 	void toggleAutoLOD();
 	VectorCamera &getCamera();
 
+	bool loadPVS(const string &filename);  
+	void togglePVSCulling();      
+
 private:
 	void computeModelViewMatrix();
-	
+
 	void buildRoom();
+	int worldToCell(const glm::vec3 &pos) const; 	
+	
 
 private:
 	VectorCamera camera;
@@ -49,6 +54,18 @@ private:
 	vector<TriangleMeshInstance *> objects;
 	float currentTime;
 	bool bAutoLOD = true; // Se vero usa il Greedy, se falso usa i tasti
+
+	// --- PVS ---
+	int pvsW = 0, pvsH = 0;
+	bool pvsLoaded = false;
+	bool bPVSCulling = true;
+	vector<vector<char>> pvsVisible; // pvsVisible[cella] = maschera 0/1 su tutte le celle
+	vector<int> objectCell; 
+
+	// --- Isteresi temporale del LOD ---
+	int lodLockFrames = 20;     // durata del lock, in frame
+	vector<int> lodCommitted;   // LOD realmente applicato (persiste tra i frame)
+	vector<int> lodLockTimer;   // frame rimanenti prima di poter cambiare
 
 };
 

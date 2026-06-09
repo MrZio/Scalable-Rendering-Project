@@ -138,6 +138,7 @@ bool Scene::loadMap(const string &filename)
 		meshHappy->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING); // Ricorda di usare QEM per l'organico!
 	}
 
+	loadPVS("../pvs.txt"); 
 	buildRoom();
 	return true;
 }
@@ -167,85 +168,128 @@ TriangleMesh *Scene::loadMesh(const string &filename) const
 
 void Scene::update(int deltaTime)
 {
-	currentTime += deltaTime;
+    currentTime += deltaTime;
 
-	// Se vuoi usare i tasti, commenta tutto quello che segue!
-	if (bAutoLOD)
-	{
-		// Altrimenti, la matematica automatica sovrascriverà sempre i tuoi tasti.
+    if (bAutoLOD)
+    {
+        // --- Budget FISSO Hardware-Calibrated ---
+        const long long TPS = 40000000; // Abbassato per evitare l'overdraw sul laptop
+        const float targetFPS = 60.0f;
+        const int maxCost = (int)(TPS / targetFPS); 
+        int currentTotalCost = 0;
 
-		int maxCost = 200000; // Alza un po' il budget per vedere i cambiamenti
-		int currentTotalCost = 0;
+        int camCell = worldToCell(camera.getPosition());
+        bool camValid = bPVSCulling && pvsLoaded && camCell != -1 && pvsVisible[camCell][camCell];
+        glm::vec3 camPos = camera.getPosition();
 
-		// 1. Reset
-		for (TriangleMeshInstance *obj : objects)
-		{
-			obj->setLOD(3); // Tutti partono al minimo
-			currentTotalCost += obj->getMesh()->getCost(3);
-		}
+        vector<float> objDistances(objects.size(), 0.1f);
+        vector<bool> objVisible(objects.size(), false);
+        vector<int> startLOD(objects.size(), 3);
 
-		// 2. Greedy Loop
-		bool canUpgrade = true;
-		glm::vec3 camPos = camera.getPosition();
+        // 1. Fase di Reset e Setup
+        for (size_t i = 0; i < objects.size(); ++i)
+        {
+            TriangleMeshInstance *obj = objects[i];
+            
+            startLOD[i] = obj->getLOD();
+            obj->updateCooldown(); 
 
-		while (currentTotalCost < maxCost && canUpgrade)
-		{
-			canUpgrade = false;
-			float bestScore = -1.0f;
-			TriangleMeshInstance *bestObj = nullptr;
+            int cell = (i < objectCell.size()) ? objectCell[i] : -1;
+            objVisible[i] = (!camValid || cell == -1) ? true : (pvsVisible[camCell][cell] != 0);
 
-			for (TriangleMeshInstance *obj : objects)
-			{
-				int L = obj->getLOD();
-				if (L == 0)
-					continue;
+            if (objVisible[i]) {
+                objDistances[i] = glm::distance(camPos, obj->getPosition());
+                if (objDistances[i] < 0.1f) objDistances[i] = 0.1f;
 
-				float D = glm::distance(camPos, obj->getPosition());
-				if (D < 0.1f)
-					D = 0.1f;
+                if (obj->getCooldown() > 0) {
+                    currentTotalCost += obj->getMesh()->getCost(obj->getLOD());
+                } else {
+                    obj->setLOD(3);
+                    currentTotalCost += obj->getMesh()->getCost(3);
+                }
+            } else {
+                obj->setLOD(3); 
+            }
+        }
 
-				float d = obj->getMesh()->getDiagonal();
+        // 2. Greedy Loop ad altissime prestazioni
+        bool canUpgrade = true;
+        while (currentTotalCost < maxCost && canUpgrade)
+        {
+            canUpgrade = false;
+            float bestScore = -1.0f;
+            int bestObjIdx = -1;
+            int bestCostDiff = 0;
 
-				// Usiamo il calcolo che abbiamo discusso
-				float benefitAttuale = d / (D * (1 << L));
-				float benefitFuturo = d / (D * (1 << (L - 1)));
-				float deltaBenefit = benefitFuturo - benefitAttuale;
+            for (size_t i = 0; i < objects.size(); ++i)
+            {
+                if (!objVisible[i]) continue;
 
-				int deltaCost = obj->getMesh()->getCost(L - 1) - obj->getMesh()->getCost(L);
+                TriangleMeshInstance *obj = objects[i];
+                int L = obj->getLOD();
 
-				if (deltaCost > 0)
-				{
-					float score = deltaBenefit / (float)deltaCost;
-					if (score > bestScore)
-					{
-						bestScore = score;
-						bestObj = obj;
-					}
-				}
-			}
+                if (L == 0 || obj->getCooldown() > 0) continue;
 
-			if (bestObj != nullptr)
-			{
-				int L = bestObj->getLOD();
-				int costToUpgrade = bestObj->getMesh()->getCost(L - 1) - bestObj->getMesh()->getCost(L);
+                float D = objDistances[i]; 
+                
+                // =======================================================
+                // NOVITÀ: IL CUTOFF SPAZIALE (Fix per l'anomalia visiva)
+                // Impedisce di sprecare il budget avanzato per oggetti lontani
+                // =======================================================
+                int nextLOD = L - 1;
+                if (nextLOD == 0 && D > 6.0f) continue;  // Niente Bianco oltre le 6 celle di distanza
+                if (nextLOD == 1 && D > 12.0f) continue; // Niente Blu oltre le 12 celle
+                if (nextLOD == 2 && D > 18.0f) continue; // Niente Giallo oltre le 18 celle
 
-				if (currentTotalCost + costToUpgrade <= maxCost)
-				{
-					bestObj->setLOD(L - 1);
-					currentTotalCost += costToUpgrade;
-					canUpgrade = true;
-				}
-			}
-		}
-	}
-	else
-	{
-		// MODALITÀ MANUALE: applichiamo il valore dei tasti a tutti gli oggetti
-		for (TriangleMeshInstance *obj : objects)
-		{
-			obj->setLOD(globalManualLOD);
-		}
-	}
+                float d = obj->getMesh()->getDiagonal();
+                float benefitAttuale = d / (D * (1 << L));
+                float benefitFuturo  = d / (D * (1 << nextLOD));
+                float deltaBenefit   = benefitFuturo - benefitAttuale;
+
+                int costNow  = obj->getMesh()->getCost(L);
+                int costNext = obj->getMesh()->getCost(nextLOD);
+                int deltaCost = costNext - costNow;
+
+                if (deltaCost > 0)
+                {
+                    if (currentTotalCost + deltaCost <= maxCost) 
+                    {
+                        float score = deltaBenefit / (float)deltaCost;
+                        if (score > bestScore)
+                        {
+                            bestScore = score;
+                            bestObjIdx = i;
+                            bestCostDiff = deltaCost;
+                        }
+                    }
+                }
+            }
+
+            // Promozione 
+            if (bestObjIdx != -1)
+            {
+                TriangleMeshInstance* bestObj = objects[bestObjIdx];
+                bestObj->setLOD(bestObj->getLOD() - 1);
+                currentTotalCost += bestCostDiff;
+                canUpgrade = true;
+            }
+        }
+
+        // 3. Fase Finale: Isteresi inter-frame
+        for (size_t i = 0; i < objects.size(); ++i)
+        {
+            if (objects[i]->getCooldown() == 0 && objects[i]->getLOD() != startLOD[i]) {
+                objects[i]->setCooldown(20);
+            }
+        }
+    }
+    else
+    {
+        for (TriangleMeshInstance *obj : objects)
+        {
+            obj->setLOD(globalManualLOD);
+        }
+    }
 }
 
 // Render the scene. First the room, then the mesh it there is one loaded.
@@ -254,13 +298,44 @@ void Scene::render()
 {
 	Application::instance().getShader()->use();
 	camera.render();
-	for (vector<TriangleMeshInstance *>::iterator it = objects.begin(); it != objects.end(); it++)
-	{
-		// Supponendo che TriangleMeshInstance abbia un metodo per impostare il LOD
-		// (Se non lo ha, dovrai aggiungerlo nella classe TriangleMeshInstance)
 
-		(*it)->render();
+	int camCell = worldToCell(camera.getPosition());
+	bool camValid = bPVSCulling && pvsLoaded && camCell != -1 &&
+	                pvsVisible[camCell][camCell];
+
+	glm::vec3 camPos = camera.getPosition();
+
+	// Raccogliamo gli oggetti da disegnare con la loro distanza dalla camera.
+	static vector<pair<float, int>> drawList; // static: evita riallocazioni ogni frame
+	drawList.clear();
+
+	int culled = 0;
+	for (size_t i = 0; i < objects.size(); ++i)
+	{
+		int cell = (i < objectCell.size()) ? objectCell[i] : -1;
+		if (camValid && cell != -1 && pvsVisible[camCell][cell] == 0)
+		{
+			culled++;
+			continue;
+		}
+		glm::vec3 d = objects[i]->getPosition() - camPos;
+		drawList.push_back({glm::dot(d, d), (int)i}); // distanza^2, basta per ordinare
 	}
+
+	// FRONT-TO-BACK: i piu' vicini per primi -> early-Z scarta i frammenti coperti.
+	sort(drawList.begin(), drawList.end());
+
+	long long tris = 0;
+	for (auto &e : drawList)
+	{
+		objects[e.second]->render();
+		tris += objects[e.second]->getMesh()->getCost(objects[e.second]->getLOD());
+	}
+
+	static int f = 0;
+	if (++f % 60 == 0)
+		cout << "Disegnati: " << drawList.size() << " | cullati: " << culled
+		     << " | triangoli: " << tris << endl;
 }
 
 void Scene::toggleAutoLOD()
@@ -307,126 +382,125 @@ void Scene::buildRoom()
 	glm::mat4 transform;
 	TriangleMeshInstance *instance;
 
-	// 1. Apriamo il file del livello appena creato
+	// Helper: aggiunge un oggetto E la sua cella, mantenendo i due vector allineati.
+	// cell = -1  -> sempre disegnato (pavimento, muri)
+	// cell >= 0  -> soggetto a culling PVS (modelli, piedistalli)
+	auto addObject = [&](TriangleMeshInstance *inst, int cell)
+	{
+		objects.push_back(inst);
+		objectCell.push_back(cell);
+	};
+
 	ifstream fin("../level.txt");
 	if (!fin.is_open())
 	{
 		cout << "ERRORE: Impossibile trovare level.txt" << endl;
-		return; // Interrompe se non trova il file
+		return;
 	}
 
 	string line;
-	int z = 0;			   // Indice della riga (Asse Z nel 3D)
-	float tileSize = 2.0f; // La grandezza fisica di ogni cella
+	int z = 0;
+	float tileSize = 2.0f;
 
-	// 2. Leggiamo il file riga per riga
 	while (fin >> line)
 	{
-
-		// 3. Scansioniamo ogni singolo carattere della riga
-		for (int x = 0; x < line.length(); x++)
-		{ // Indice della colonna (Asse X)
+		for (int x = 0; x < (int)line.length(); x++)
+		{
 			char tileType = line[x];
 
-			// Calcoliamo la coordinata matematica reale.
-			// Sottraiamo 10.0f per far "centrare" la stanza attorno alla telecamera
 			float realX = (x * tileSize) - 10.0f;
 			float realZ = (z * tileSize) - 10.0f;
 
-			// CASO A: Pavimento (Lo creiamo sempre, per qualsiasi blocco valido)
-			if (tileType == '0' || tileType == '1' || tileType == '2' || tileType == '3' || tileType == '4' || tileType == '5')
+			// Indice di cella per questo blocco (deve combaciare con il PVS: z*W + x)
+			int thisCell = (pvsLoaded && pvsW > 0) ? (z * pvsW + x) : -1;
+
+			// CASO A: Pavimento (sempre disegnato)
+			if (tileType == '0' || tileType == '1' || tileType == '2' ||
+			    tileType == '3' || tileType == '4' || tileType == '5')
 			{
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, -0.05f, realZ));
-				// Scaliamo un cubo in modo che sia largo "tileSize" ma piatto (0.1f)
 				transform = glm::scale(transform, glm::vec3(tileSize, 0.1f, tileSize));
 				instance = new TriangleMeshInstance();
 				instance->init(meshCube, glm::vec4(0.137f, 0.094f, 0.074f, 1.0f), transform, 0.1f, 0.85f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 			}
 
-			// CASO B: Muro
+			// CASO B: Muro (sempre disegnato)
 			if (tileType == '1')
 			{
 				transform = glm::mat4(1.0f);
-				// Alziamo il muro di 1.0 sull'asse Y per poggiarlo sopra al pavimento
 				transform = glm::translate(transform, glm::vec3(realX, 1.0f, realZ));
-				// Le slide di lab1.pdf dicono: "Empty cells & walls = Scaled cubes"
 				transform = glm::scale(transform, glm::vec3(tileSize, 2.0f, tileSize));
 				instance = new TriangleMeshInstance();
-				// Grigio chiaro per i muri
 				instance->init(meshCube, glm::vec4(0.6f, 0.6f, 0.6f, 1.0f), transform, 0.1f, 0.85f);
-				objects.push_back(instance);
+				addObject(instance, -1);
 			}
 
-			// CASO C: Piedistallo + Armadillo (il nostro nuovo codice '2')
+			// CASO C: Piedistallo + Armadillo
 			if (tileType == '2')
 			{
-				// Piedistallo
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 
-				// Armadillo (meshFigurine)
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshFigurine, glm::vec4(1.0f), transform, 0.15f, 0.4f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 			}
 
+			// CASO D: Piedistallo + Bunny
 			if (tileType == '3')
 			{
-				// 1. Prima creo il Piedistallo
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 
-				// 2. Poi creo il Bunny sopra al piedistallo (Y a 0.75)
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
-				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f)); // Se il bunny ti sembra piccolo, puoi provare 0.8f invece di 0.5f
+				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshBunny, glm::vec4(1.0f), transform, 0.15f, 0.4f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 			}
 
+			// CASO E: Piedistallo + Dragon
 			if (tileType == '4')
 			{
-				// 1. Prima creo il Piedistallo
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 
-				// 2. Poi creo il Dragon sopra al piedistallo (Y a 0.75)
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.75f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshDragon, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 			}
+
+			// CASO F: Piedistallo + Happy
 			if (tileType == '5')
 			{
-				// 1. Piedistallo
 				transform = glm::mat4(1.0f);
 				transform = glm::translate(transform, glm::vec3(realX, 0.0f, realZ));
 				transform = glm::scale(transform, glm::vec3(0.5f, 0.75f, 0.5f));
 				instance = new TriangleMeshInstance();
 				instance->init(meshBase, glm::vec4(1.0f), transform, 0.15f, 0.75f);
-				objects.push_back(instance);
+				addObject(instance, thisCell);
 
-				// 2. Happy sopra al piedistallo
 				if (meshHappy != NULL)
 				{
 					transform = glm::mat4(1.0f);
@@ -434,10 +508,71 @@ void Scene::buildRoom()
 					transform = glm::scale(transform, glm::vec3(0.5f, 0.5f, 0.5f));
 					instance = new TriangleMeshInstance();
 					instance->init(meshHappy, glm::vec4(1.0f), transform, 0.15f, 0.4f);
-					objects.push_back(instance);
+					addObject(instance, thisCell);
 				}
 			}
 		}
-		z++; // Finito di leggere la riga, incrementiamo l'asse Z
+		z++;
 	}
+}
+
+bool Scene::loadPVS(const string &filename)
+{
+	ifstream fin(filename);
+	if (!fin.is_open())
+	{
+		cout << "ATTENZIONE: impossibile aprire " << filename
+		     << ". Culling PVS disattivato." << endl;
+		pvsLoaded = false;
+		return false;
+	}
+
+	fin >> pvsW >> pvsH;
+	if (pvsW <= 0 || pvsH <= 0)
+	{
+		cout << "ATTENZIONE: header PVS non valido." << endl;
+		pvsLoaded = false;
+		return false;
+	}
+
+	int N = pvsW * pvsH;
+	pvsVisible.assign(N, vector<char>(N, 0));
+
+	for (int i = 0; i < N; ++i)
+	{
+		int k;
+		if (!(fin >> k))
+			break;
+		for (int j = 0; j < k; ++j)
+		{
+			int v;
+			fin >> v;
+			if (v >= 0 && v < N)
+				pvsVisible[i][v] = 1;
+		}
+	}
+
+	pvsLoaded = true;
+	cout << "PVS caricato: " << pvsW << " x " << pvsH << " (" << N << " celle)" << endl;
+	return true;
+}
+
+// Converte una posizione del mondo nell'indice di cella (stessa convenzione di buildRoom:
+// realX = x*tileSize - 10, tileSize = 2). Ritorna -1 se fuori griglia.
+int Scene::worldToCell(const glm::vec3 &pos) const
+{
+	if (pvsW == 0 || pvsH == 0)
+		return -1;
+	const float tileSize = 2.0f;
+	int x = (int)floor((pos.x + 10.0f) / tileSize + 0.5f);
+	int z = (int)floor((pos.z + 10.0f) / tileSize + 0.5f);
+	if (x < 0 || x >= pvsW || z < 0 || z >= pvsH)
+		return -1;
+	return z * pvsW + x;
+}
+
+void Scene::togglePVSCulling()
+{
+	bPVSCulling = !bPVSCulling;
+	cout << "PVS culling is now " << (bPVSCulling ? "ON" : "OFF") << endl;
 }

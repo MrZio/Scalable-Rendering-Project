@@ -4,10 +4,15 @@
 #include "Application.h"
 
 
-#define VIEWPORT_INIT_WIDTH 900
+#define VIEWPORT_INIT_WIDTH 800
 #define VIEWPORT_INIT_HEIGHT 600
 
 #define TARGET_FRAMERATE 60.0f
+
+extern "C" {
+    __declspec(dllexport) unsigned long NvOptimusEnablement = 1;
+    __declspec(dllexport) int AmdPowerXpressRequestHighPerformance = 1;
+}
 
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -80,7 +85,7 @@ int main(int argc, char *argv[])
 	glfwSetWindowPos(window, 100, 100);
 	/* Make the window's context current */
 	glfwMakeContextCurrent(window);
-	glfwSwapInterval(1);
+	glfwSwapInterval(0); // Disable vsync to better measure framerate
 
 	/* Set callbacks */
 	glfwSetKeyCallback(window, key_callback);
@@ -90,6 +95,8 @@ int main(int argc, char *argv[])
 
 	// GL3W will take care of OpenGL extension functions
 	gl3wInit();
+	cout << "GPU: " << glGetString(GL_RENDERER) << endl;
+	cout << "Vendor: " << glGetString(GL_VENDOR) << endl;
 
 	/* Init step of the game loop */
 	Application::instance().init(window);
@@ -107,7 +114,9 @@ int main(int argc, char *argv[])
 		if (currentTime - timePreviousFrame >= timePerFrame)
 		{
 
-			cout << "FPS: " << (1.0 / (currentTime - timePreviousFrame)) << endl;
+			static int fpsCounter = 0;
+			if (++fpsCounter % 60 == 0)
+				cout << "FPS: " << (1.0 / (currentTime - timePreviousFrame)) << endl;
 
 			/* Update & render steps of the game loop */
 			if(!Application::instance().update(int(1000.0f * (currentTime - timePreviousFrame))))

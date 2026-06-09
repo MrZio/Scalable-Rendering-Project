@@ -16,6 +16,10 @@ public:
 	void init(TriangleMesh *mesh, const glm::vec4 &color = glm::vec4(1.0f), const glm::mat4 &transform = glm::mat4(1.0f), float metallic = 0.0f, float roughness = 1.0f);
 	void render();
 	void setLOD(int level) { lodLevel = level; }
+
+	int getCooldown() const { return cooldownFrames; }
+    void setCooldown(int frames) { cooldownFrames = frames; }
+    void updateCooldown() { if (cooldownFrames > 0) cooldownFrames--; }
 	
 	
 	
@@ -48,6 +52,7 @@ private:
 	float metallic;
 	float roughness;
 	int lodLevel;
+	int cooldownFrames;
 
 };
 

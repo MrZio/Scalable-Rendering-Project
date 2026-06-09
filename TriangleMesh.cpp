@@ -366,7 +366,7 @@ void TriangleMesh::computeAllLODs(SimplifyMode mode)
     cout << "Generando LOD 0 (Originale)..." << endl;
     sendToOpenGL(0, originalVertices, originalTriangles);
 
-    int resolutions[4] = {0, 100, 50, 25};
+    int resolutions[4] = {0, 100, 50, 35};
 
     for(int lvl = 1; lvl < NUM_LODS; lvl++) {
         cout << "Generando LOD " << lvl << " (Res: " << resolutions[lvl] << ")..." << endl;
@@ -388,14 +388,17 @@ void TriangleMesh::computeAllLODs(SimplifyMode mode)
 
 float TriangleMesh::getDiagonal() const
 {
-    if (originalVertices.empty()) return 0.0f;
+    if (cachedDiagonal >= 0.0f)
+        return cachedDiagonal;          // gia' calcolata: O(1)
+
+    if (originalVertices.empty())
+        return 0.0f;
+
     glm::vec3 minB = originalVertices[0], maxB = originalVertices[0];
-    for( const auto& v : originalVertices) {
-        minB = glm::min(minB,v);
-        maxB = glm::max(maxB,v);
+    for (const auto& v : originalVertices) {
+        minB = glm::min(minB, v);
+        maxB = glm::max(maxB, v);
     }
-
-    return glm::distance(minB, maxB); //la 'd' della formula
-
-    
+    cachedDiagonal = glm::distance(minB, maxB); // calcola UNA volta e memorizza
+    return cachedDiagonal;
 }
