@@ -99,6 +99,7 @@ void Application::keyPressed(int key)
 		scene.changeLevelDetail(-1);
     	break;
 	case GLFW_KEY_M:
+		scene.cycleClusteringMode();
 		break;
 	case GLFW_KEY_LEFT:
 	case GLFW_KEY_DOWN:

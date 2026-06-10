@@ -19,6 +19,7 @@ using namespace std;
 
 enum class SimplifyMode
 {
+	SIMPLE_CLUSTERING,
 	QEM_STANDARD,
 	NORMAL_CLUSTERING
 };
@@ -69,24 +70,12 @@ class TriangleMesh
 		}
 	};
 
-	// struct CellInfo
-	// {
-	// 	glm::vec3 sum;	 // Somma delle posizioni dei vertici nella cella
-	// 	int count;		 // Numero di vertici ci sono finiti dentro
-	// 	int newVertexId; // Id del nuovo vertice creato per questa cella
 
-	// 	// Costruttore: all'inizio il cestino è vuoto
-	// 	CellInfo()
-	// 	{
-	// 		sum = glm::vec3(0.0f);
-	// 		count = 0;
-	// 		newVertexId = -1;
-	// 	}
-	// };
 
 	struct CellInfo
 	{
 		Eigen::Matrix4d Q[8];
+		glm::vec3 posSum[8];
 		int count[8];
 		int newVertexId[8];
 
@@ -95,6 +84,7 @@ class TriangleMesh
 			for (int i = 0; i < 8; i++)
 			{
 				Q[i].setZero();
+				posSum[i] = glm::vec3(0.0f);
 				count[i] = 0;
 				newVertexId[i] = -1;
 			}

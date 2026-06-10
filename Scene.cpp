@@ -119,23 +119,25 @@ bool Scene::loadMap(const string &filename)
 		cout << "ATTENZIONE: Impossibile caricare " << model_filename << ". Il piedistallo sara' vuoto." << endl;
 	}
 
-	// Semplifichiamo il Drago (proviamo con cubetti più grandi, 0.05)
+	// Semplifichiamo il Drago 
 	// cout << "Semplificando il Drago..." << endl;
 	// meshDragon->simplify(100);
 	// meshDragon->simplify(100, SimplifyMode::NORMAL_CLUSTERING);
+	currentMode = SimplifyMode::NORMAL_CLUSTERING;
+
 	cout << "Pre-computing LODs for Armadillo..." << endl;
-	meshFigurine->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+	meshFigurine->computeAllLODs(currentMode);
 
 	cout << "Pre-computing LODs for Bunny..." << endl;
-	meshBunny->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+	meshBunny->computeAllLODs(currentMode);
 
 	cout << "Pre-computing LODs for Dragon..." << endl;
-	meshDragon->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING);
+	meshDragon->computeAllLODs(currentMode);
 
 	if (meshHappy != NULL)
 	{
 		cout << "Pre-computing LODs for Happy..." << endl;
-		meshHappy->computeAllLODs(SimplifyMode::NORMAL_CLUSTERING); // Ricorda di usare QEM per l'organico!
+		meshHappy->computeAllLODs(currentMode); // Ricorda di usare QEM per l'organico!
 	}
 
 	loadPVS("../pvs.txt"); 
@@ -233,7 +235,7 @@ void Scene::update(int deltaTime)
                 float D = objDistances[i]; 
                 
                 // =======================================================
-                // NOVITÀ: IL CUTOFF SPAZIALE (Fix per l'anomalia visiva)
+                // IL CUTOFF SPAZIALE 
                 // Impedisce di sprecare il budget avanzato per oggetti lontani
                 // =======================================================
                 int nextLOD = L - 1;
@@ -575,4 +577,31 @@ void Scene::togglePVSCulling()
 {
 	bPVSCulling = !bPVSCulling;
 	cout << "PVS culling is now " << (bPVSCulling ? "ON" : "OFF") << endl;
+}
+
+void Scene::cycleClusteringMode()
+{
+	// Cicla: Semplice -> QEM -> Normal -> Semplice ...
+	if (currentMode == SimplifyMode::SIMPLE_CLUSTERING)
+		currentMode = SimplifyMode::QEM_STANDARD;
+	else if (currentMode == SimplifyMode::QEM_STANDARD)
+		currentMode = SimplifyMode::NORMAL_CLUSTERING;
+	else
+		currentMode = SimplifyMode::SIMPLE_CLUSTERING;
+
+	const char *name =
+		(currentMode == SimplifyMode::SIMPLE_CLUSTERING) ? "Simple Vertex Clustering" :
+		(currentMode == SimplifyMode::QEM_STANDARD)       ? "QEM (Quadric Error Metrics)" :
+		                                                    "QEM + Normal Clustering";
+
+	cout << "\n>>> Rigenerazione LOD con: " << name << " (attendere...)" << endl;
+
+	// Rigenera i LOD di tutti i modelli con la nuova modalita'.
+	// NB: per il Drago dura qualche secondo, la finestra si blocca durante il calcolo.
+	if (meshFigurine) meshFigurine->computeAllLODs(currentMode);
+	if (meshBunny)    meshBunny->computeAllLODs(currentMode);
+	if (meshDragon)   meshDragon->computeAllLODs(currentMode);
+	if (meshHappy)    meshHappy->computeAllLODs(currentMode);
+
+	cout << ">>> Fatto. Modalita' attuale: " << name << "\n" << endl;
 }

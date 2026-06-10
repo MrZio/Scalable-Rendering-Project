@@ -31,6 +31,7 @@ public:
 	void update(int deltaTime);
 	void render();
 	void changeLevelDetail(int delta);
+	void cycleClusteringMode();
     int getGridResolution();
     void setGridResolution(int newResolution);
 	std::map<std::pair<int, int>, char> grid; // Mappa che associa a ogni cella (x, z) il suo tipo di blocco (0, 1, 2, 3 o 4)
@@ -54,6 +55,7 @@ private:
 	vector<TriangleMeshInstance *> objects;
 	float currentTime;
 	bool bAutoLOD = true; // Se vero usa il Greedy, se falso usa i tasti
+	SimplifyMode currentMode;
 
 	// --- PVS ---
 	int pvsW = 0, pvsH = 0;
