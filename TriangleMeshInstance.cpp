@@ -2,6 +2,9 @@
 #include "TriangleMeshInstance.h"
 #include <glm/gtc/matrix_transform.hpp>
 
+// Flag globale: attiva/disattiva il LOD coloring (toggle col tasto C)
+bool gLODColoring = true;
+
 
 TriangleMeshInstance::TriangleMeshInstance()
 {
@@ -32,16 +35,16 @@ void TriangleMeshInstance::render()
 		Application::instance().getShader()->use();
         
         // --- INIZIO LOD COLORING ---
-        glm::vec4 renderColor = color; // Partiamo dal colore base
+        glm::vec4 renderColor = color; // colore base
         
-        // Solo per i modelli che hanno effettivamente dei LOD calcolati (costo > 0)
-        // (così evitiamo di colorare i muri e il pavimento)
-        if (mesh->getCost(1) > 0) 
+        // Coloriamo solo se il toggle e' attivo e solo i modelli con LOD (costo > 0),
+        // cosi' muri e pavimento restano del loro colore base.
+        if (gLODColoring && mesh->getCost(1) > 0) 
         {
-            if (lodLevel == 0) renderColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);      // Bianco[cite: 8]
-            else if (lodLevel == 1) renderColor = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f); // Blu[cite: 8]
-            else if (lodLevel == 2) renderColor = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f); // Giallo[cite: 8]
-            else if (lodLevel == 3) renderColor = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f); // Rosso[cite: 8]
+            if (lodLevel == 0) renderColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);      
+            else if (lodLevel == 1) renderColor = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f); 
+            else if (lodLevel == 2) renderColor = glm::vec4(1.0f, 1.0f, 0.0f, 1.0f); 
+            else if (lodLevel == 3) renderColor = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f); 
         }
         // --- FINE LOD COLORING ---
 
@@ -116,4 +119,3 @@ float TriangleMeshInstance::getRoughness() const
 {
 	return roughness;
 }
-

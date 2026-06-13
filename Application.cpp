@@ -124,6 +124,13 @@ void Application::keyPressed(int key)
 	case GLFW_KEY_P:
 		scene.togglePVSCulling();
 		break;
+	case GLFW_KEY_C:
+	{
+		extern bool gLODColoring;
+		gLODColoring = !gLODColoring;
+		std::cout << "LOD colouring is now " << (gLODColoring ? "ON" : "OFF") << std::endl;
+	}
+		break;
 	case GLFW_KEY_LEFT_SHIFT :
 		shift = true;
 		break;
@@ -252,7 +259,3 @@ ShaderProgram *Application::getShader()
 {
 	return &basicProgram;
 }
-
-
-
-

@@ -8,7 +8,7 @@
 #include "Application.h"
 
 int gridResolution = 100;
-int globalManualLOD = 0; // Parte da 0 (massima qualità)
+int globalManualLOD = 0; //  0 (massima qualità)
 
 Scene::Scene()
 {
@@ -368,7 +368,7 @@ void Scene::changeLevelDetail(int delta)
 
 	globalManualLOD += delta;
 
-	// Assicuriamoci che l'indice rimanga tra 0 e 3 (NUM_LODS - 1)
+	// l'indice rimanga tra 0 e 3 (NUM_LODS - 1)
 	if (globalManualLOD < 0)
 		globalManualLOD = 0;
 	if (globalManualLOD > 3)
@@ -597,7 +597,6 @@ void Scene::cycleClusteringMode()
 	cout << "\n>>> Rigenerazione LOD con: " << name << " (attendere...)" << endl;
 
 	// Rigenera i LOD di tutti i modelli con la nuova modalita'.
-	// NB: per il Drago dura qualche secondo, la finestra si blocca durante il calcolo.
 	if (meshFigurine) meshFigurine->computeAllLODs(currentMode);
 	if (meshBunny)    meshBunny->computeAllLODs(currentMode);
 	if (meshDragon)   meshDragon->computeAllLODs(currentMode);
